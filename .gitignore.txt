@@ -1,0 +1,20 @@
+.bash_history
+.git-for-windows-updater
+.vscode/
+3D Objects/
+AppData/
+Contacts/
+Desktop/
+Documents/
+Downloads/
+Favorites/
+IntelGraphicsProfiles/
+Links/
+Music/
+OneDrive/
+Pictures/
+Saved Games/
+Videos/
+explicacionesBasicas.hmtl
+pseint/
+zinjai/
