@@ -1,88 +1,458 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Grupo 22</title>
-        <style>
-            body{
-                background-color: rgb(168, 231, 247);
-                margin-left:150px;
-                margin-right:150px;
-            }
-            section{
-                font-family: Arial, Helvetica, sans-serif;
-                line-height:1.25;
-                text-align: justify;
-            }
-            h1,h2{
-                font-size: 20px;
-            }
-            h5{
-                font-size: 15px;
-            }
-            h4,h5{
-                font-weight: normal;
-                font-style: italic;
-            }
-            li{
-                list-style:none;
-            }
-        </style>  
-    </head>  
-    <body>
-       <section label="Comparaciones">
-        <h2>Comparaciones descripitivas</h2>
-            <article>
-                <p>
-                    Decidimos realizar la comparación técnica con otros juegos, basándonos en su popularidad,
-                    y nuestro conocimiento de cada juego,
-                    si bien son juegos diferentes, creímos en la posibilidad de generalizar nuestra computadora,
-                    para correr distinta variedad de juegos, ya que un streamer debería poder adaptarse a las tendencias.
-                </p>
-            </article>
-            <div>
-                <p>
-                    Por un lado tenemos Phasmophobia: Ofrece un gameplay multijugador de hasta 4 personas, con temática de horror e investigación paranormal.
-                    Dentro del juego se usa el reconocimiento de voz para interactuar con el entorno y fantasmas en el juego.
-                    Su objetivo es identificar fantasmas en distintos mapas predeterminados. Donde se deben llevar a cabo tareas específicas de medición de parámetros paranormales,
-                    usando cámaras, termómetros, linternas y un libro para registrar todo lo sucedido, el juego termina cuando,
-                    ingresas correctamente los datos del fantasma incluyendo las fotos recolectadas y demás.
-                </p>  
-            </div>
-            <div>
-                <p>
-                    Por otro lado tenemos el Counter-Strike 2, clasificado como un shooter en primera persona.
-                    Tiene 3 modos de juego, en el cual van a existir siempre 2 bandos, los terroristas y los antiterroristas.
-                    La primera modalidad y más conocida es sobre colocar una bomba, la tarea de los terroristas será colocar la bomba en la base antiterrorista,
-                    defendiendola para que no sea desactivada hasta que explote y los antiterroristas deben desactivarla antes de que detone.
-                    La modalidad más común es en la que un solo bando queda en pie, ganan los que hayan eliminado por completo al enemigo.
-                    En la última modalidad se incluyen rehenes, los cuales se encuentran en la base terrorista quienes deben asegurarse de que no sean rescatados,
-                    mientras que los antiterroristas tienen que llevar todos los rehenes a salvo a su base.
-                </p>
-            </div>
-            <div>
-                <p>Ambos juegos tienen gráficos elevados, aunque no se comparen con minecraft base, se pueden comparar si a minecraft le incluimos shaders(sombras).
-                    Para poder armar una computadora que corra estos 3 juegos teniendo un streaming fluido se necesitan estos mínimos requisitos de hardware.</p><h4>Requisitos minimos</h4>
-                <ul>
-                    <h5>Hardware</h5>
-                        <li>Procesador de 6 núcleos y 12 hilos de socket AM4, como recomendado un: AMD Ryzen 5 5600G.</li>
-                        <li>Ram de 16gb si es posible una DDR4, o dos de 8gb.</li>
-                        <li>Disco o unidad de estado sólido (SSD) de 512gb.</li>
-                        <li>Fuente de 650W.</li>
-                        <li>GPU o tarjeta gráfica GTX 1650 de 4gb.</li>
-                        <li>Motherboard (Placamadre) con un chipset B450, de tipo Mini ATX, compatible con procesador AM4.</li>
-                    <h5>Software</h5>
-                        <li>Windows 10 64bit</li>
-                        <li>Steam o EpicGames para comprar los juegos</li>
-                        <li>Java el paquete de JDK</li>
-                        <li>OBS studio</li>
-                        <li>Navegador: Chrome, Edge o OperaGX </li>
-                </ul>
-            </div>
-        </section>
-        <footer class="conclusionesIA">
+    <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color:#133;
+    color: #e0e0e0;
+  }
 
-        </footer>
-    </body>
-</html>
+  header {
+    background-color: #133;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .header {
+    color: #ffffff;
+    background-color: rgb(21, 94, 94);
+    padding: 10px;
+    text-align: center;
+    border: none;
+  }
+
+  section {
+    background-color: #143;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+
+  h1, h2 {
+    color: #ffffff;
+  }
+
+  a {
+    color: #66b2ff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+  .precio {
+    font-weight: bold;
+    color: #66b2ff;
+    min-width: 120px;
+    text-align: right;
+    font-size: 1.1em;
+  }
+
+  .comparation {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+  }
+
+  .comparativa-streaming {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bloque-iteme {
+    background-color: #143;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .titulo-iteme {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+
+  .fila-comparacion {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .columna-comparacion {
+    width: 48%;
+  }
+
+  .columna-comparacion p {
+    margin: 0 0 5px 0;
+    color: #e0e0e0;
+  }
+
+  .columna-comparacion ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .columna-comparacion li {
+    margin-bottom: 5px;
+    color: #cfcfcf;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #153;
+    padding: 15px;
+    border-radius: 6px;
+  }
+
+  .detalle {
+    max-width: 70%;
+    margin: 20px;
+  }
+
+  .detalle h2 {
+    margin: 0 0 5px 0;
+    font-size: 1.1em;
+    color: #ffffff;
+  }
+
+  .detalle p {
+    margin: 0;
+    font-size: 0.95em;
+    color: #cccccc;
+  }
+  .totales {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color:  #135;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+
+  .total-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1em;
+    color: #ffffff;
+    border-bottom: 1px solid #133;
+    padding-bottom: 8px;
+  }
+
+  .total-label {
+    font-weight: bold;
+  }
+
+  .total-precio {
+    color: #66b2ff;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: right;
+    min-width: 140px;
+  }
+</style>
+
+<header>
+    <h1 class="header">Configuración de PC Gamer</h1>
+        <br>
+    <h2 class="header">Compontentes de la pc</h2>
+</header>
+
+<section>
+    <hr>
+    <div class="items">
+        <article class="item">
+            <div class="detalle">
+                <h2>Procesador (CPU)</h2>
+                <p>AMD Ryzen 5 4500 - AM4</p>
+                    <ul>
+                        <li>Núcleos: 6</li>
+                        <li>Hilos: 12</li>
+                        <li>Incluye cooler</li>
+                        <li>Soporta RAM DDR4</li>
+                        <li>Potencia TDP: 65W</li>
+                        <li>Referencia:   <a href="https://bestinformatica.com.ar/itemes-de-pc/procesadores/procesador-amd-am4-ryzen-5-4500-65w-325273.html">Best Informática</a></li>
+                    </ul>
+            </div>
+            <div class="precio">$120.382</div>
+        </article>
+
+        <article class="item">
+                <div class="detalle">
+                    <h2>Motherboard</h2>
+                    <p>Asus Prime A520m-k/csm</p>
+                    <ul>
+                        <li>Formato: mATX</li>
+                        <li>Zócalo: AM4</li>
+                        <li>Soporta Ryzen 4000</li>
+                        <li>Referencia:   <a href="https://bestinformatica.com.ar/itemes-de-pc/motherboards/mother-asus-am4-prime-a520m-k-csm-342116.html">Best Informática</a></li>
+                    </ul>
+                </div>
+                <div class="precio">$101.005</div>
+        </article>
+
+        <article class="item">
+                <div class="detalle">
+                    <h2>Memoria RAM</h2>
+                    <p>Kingston RAM DDR4</p>
+                    <ul>
+                        <li>4° Generación</li>
+                        <li>Capacidad: 16GB</li>
+                        <li>3200 3200MHz</li>
+                        <li>Referencia:   <a href="L0005-2 presupuesto INSUMAX.pdf">INSUMAX</a></li>
+                    </ul>
+                </div>
+                <div class="precio">$93.420</div>
+        </article>
+
+        <article class="item">
+                <div class="detalle">
+                    <h2>Almacenamiento</h2>
+                    <p> Disco SSD  Wd Green Sn350 Nvme</p>
+                    <ul>
+                        <li>Tipo: Unidad de estado Solido</li>
+                        <li>Conexion:M.2</li>
+                        <li>Capacidad: 500GB</li>
+                        <li>Referencia: <a href="https://bestinformatica.com.ar/itemes-de-pc/unidades-solidas-ssd/disco-ssd-m.2-500gb-wd-green-sn350-nvme-326931.html">Best Informática</a></li>
+                    </ul>
+                </div>
+                <div class="precio">$62.401</div>
+        </article>
+
+        <article class="item">
+                <div class="detalle">
+                    <h2>Placa de Video (GPU)</h2>
+                    <p>ASUS GeForce RTX 3050 Dual OC 6GB</p>
+                    <ul>
+                        <li>Marca: Nvidia</li>
+                        <li>Velocidad VRAM: 14 Gbps</li>
+                        <li>Referencia:   <a href="https://www.armytech.com.ar/placas-de-video/5127-placa-de-video-asus-geforce-rtx-3050-dual-oc-6gb.html">Armytech</a></li>
+                    </ul>
+                </div>
+                <div class="precio">$338.461</div>
+        </article>
+
+        <article class="item">
+                <div class="detalle">
+                    <h2>Gabinete</h2>
+                    <p>Aerocool Mecha ARGB Vidrio</p>
+                    <ul>
+                        <li>Formato: Mini-ITX / MicroATX / ATX</li>
+                        <li>Tamaño: Mid Tower</li>
+                        <li>Referencia:   <a href="https://www.armytech.com.ar/gabinetes-sin-psu/407-gabinete-gamer-aerocool-mecha-argb-vidrio-g-bk-v2.html">Armytech</a></li>
+                    </ul>
+                </div>
+                <div class="precio">$35.205</div>
+        </article>
+
+        <article class="item">
+                <div class="detalle">
+                    <h2>Fuente</h2>
+                    <p>Aureox 650W Bronze 80+ PSU</p>
+                    <ul>
+                        <li>Referencia:  <a href="https://bestinformatica.com.ar/itemes-de-pc/fuentes/fuente-gamer-aureox-650w-bronze-80+psu-325421.html">Best Informática</a></li>
+                    </ul>
+                </div>
+                <div class="precio">$87.411</div>
+        </article>
+
+
+            <div class="header">
+                <h1 class="header">Perifericos</h1>
+            </div>
+
+ 
+
+        <div class="item">
+            <div class="detalle">
+                <h2>Teclado + Mouse</h2>
+                <p>Genius Slimstar C126 Combo USB</p>
+                <p><a href="https://bestinformatica.com.ar/perifericos/teclados/genius-slimstar-c126-combo-teclado-y-mouse-black-325458.html">Best Informática</a></p>
+            </div>
+            <div class="precio">$18.124</div>
+        </div>
+
+        <div class="item">
+            <div class="detalle">
+                <h2>Monitor</h2>
+                <p>Solarmax 23.6" SX24F2 75Hz FHD HDMI/VGA</p>
+                <p>Resolución: 1920x1080 | Voltaje: 110/220V</p>
+                <p><a href="https://www.maximus.com.ar/Producto/Monitor-LED-VA-Solarmax-236-SX24F2-75hz-FHD-HDMI--VGA/ITEM=15549/maximus.aspx">Maximus Gaming Hardware</a></p>
+            </div>
+            <div class="precio">$137.056,69</div>
+        </div>
+
+        <div class="item">
+            <div class="detalle">
+                <h2>Micrófono</h2>
+                <p>Trust Mantis GXT232 con cable USB</p>
+                <p><a href="https://fullh4rd.com.ar/prod/17904/microfono-trust-mantis-gxt232">Trust GXT232</a></p>
+            </div>
+            <div class="precio">$42.710,40</div>
+        </div>
+
+        <div class="item">
+            <div class="detalle">
+                <h2>Auriculares</h2>
+                <p>Trust Carus GXT492 Multiplataforma Black</p>
+                <p><a href="https://bestinformatica.com.ar/perifericos/parlantes-y-auriculares/auricular-trust-carus-multiplataforma-black-gxt492-377390.html">Best Informática</a></p>
+            </div>
+            <div class="precio">$59.067</div>
+        </div>
+
+        <div class="item">
+            <div class="detalle">
+                <h2>Estabilizador</h2>
+                <p>Lyonn TCA-1200N-V</p>
+                <p><a href="https://bestinformatica.com.ar/energia/upss/lyonn-estabilizador-elect.-tca-1200n-v-341885.html">Best Informática</a></p>
+            </div>
+            <div class="precio">$58.072</div>
+        </div>
+
+        <section class="totales">
+        <div class="total-item">
+            <div class="total-label">Total Hardware Principal</div>
+            <div class="total-precio">$838.285</div>
+        </div>
+        <div class="total-item">
+            <div class="total-label">Total Periféricos</div>
+            <div class="total-precio">$315.030,09</div>
+        </div>
+        <div class="total-item">
+            <div class="total-label">Total General</div>
+            <div class="total-precio">$1.153.315,09</div>
+        </div>
+        </section>
+</section>
+    <section>
+        <article class="item">
+            <div class="comparation">
+                <div class="header">
+                    <h2 class="header">Justificaciones y Comparaciones</h2>
+                </div>
+                <br>
+        <section>
+    <div class="comparativa-streaming">
+
+        <div class="bloque-iteme">
+            <div class="titulo-iteme">Procesador</div>
+            <div class="fila-comparacion">
+                <div class="columna-comparacion">
+                    <p>  INSUMAX:   Ryzen 3 3200G</p>
+                    <ul>
+                        <li>4 núcleos / 4 hilos</li>
+                        <li>Arquitectura Zen+</li>
+                        <li>Limitado para multitarea y streaming</li>
+                    </ul>
+                </div>
+                <div class="columna-comparacion">
+                    <p>  Tu opción:   Ryzen 5 4500</p>
+                    <ul>
+                        <li>6 núcleos / 12 hilos</li>
+                        <li>Arquitectura Zen 2</li>
+                        <li>Ideal para jugar y transmitir simultáneamente</li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+
+        <div class="bloque-iteme">
+            <div class="titulo-iteme">Placa Madre</div>
+            <div class="fila-comparacion">
+                <div class="columna-comparacion">
+                    <p> INSUMAX:   MSI A520M-A PRO OEM</p>
+                    <ul>
+                        <li>Versión OEM básica</li>
+                        <li>Menor soporte de BIOS</li>
+                    </ul>
+                </div>
+                <div class="columna-comparacion">
+                    <p> Tu opción:   Asus Prime A520M-K/CSM</p>
+                    <ul>
+                        <li>Versión comercial con soporte CSM</li>
+                        <li>Mayor confiabilidad y actualizaciones</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bloque-iteme">
+        <div class="titulo-iteme">Memoria RAM</div>
+        <p>Ambas configuraciones incluyen Kingston DDR4 16GB 3200MHz, suficiente para Minecraft con shaders y streaming fluido.</p>
+        </div>
+
+        <div class="bloque-iteme">
+            <div class="titulo-iteme">Almacenamiento</div>
+            <div class="fila-comparacion">
+                <div class="columna-comparacion">
+                    <p> INSUMAX:   SSD 256GB NVMe Hiksemi</p>
+                    <ul>
+                        <li>Menor capacidad</li>
+                        <li>Marca menos reconocida</li>
+                    </ul>
+                </div>
+                <div class="columna-comparacion">
+                    <p> Tu opción:   SSD 500GB NVMe WD Green SN350</p>
+                    <ul>
+                        <li>Mayor espacio para grabaciones y mods</li>
+                        <li>Marca confiable y buen rendimiento</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bloque-iteme">
+            <div class="titulo-iteme">Placa de Video (GPU)</div>
+            <div class="fila-comparacion">
+                <div class="columna-comparacion">
+                    <p> INSUMAX:   GTX 1630 4GB</p>
+                    <ul>
+                        <li>Sin Ray Tracing</li>
+                        <li>Limitada para shaders exigentes</li>
+                    </ul>
+                </div>
+                <div class="columna-comparacion">
+                    <p> Tu opción:   RTX 3050 6GB</p>
+                    <ul>
+                        <li>Ray Tracing y DLSS</li>
+                        <li>Más de 60 FPS con shaders en 1080p</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bloque-iteme">
+            <div class="titulo-iteme">Fuente</div>
+            <div class="fila-comparacion">
+                <div class="columna-comparacion">
+                    <p> INSUMAX:   Sentey 600W (genérica)</p>
+                    <ul>
+                        <li>Sin certificación</li>
+                        <li>Riesgo de inestabilidad</li>
+                    </ul>
+                </div>
+                <div class="columna-comparacion">
+                    <p>  Tu opción:   Aureox 650W Bronze 80+</p>
+                    <ul>
+                        <li>Certificación 80+ Bronze</li>
+                        <li>Mayor eficiencia y protección</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+                </div>
+    </article>
+</section>
+
