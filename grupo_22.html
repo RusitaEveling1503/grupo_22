@@ -1,0 +1,485 @@
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Presupuesto y Resumen - PC Gaming / Streaming</title>
+  <style>
+    :root{--bg:#0f1720;--card:#0b1220;--muted:#9aa6b2;--accent:#1fb6ff;--glass:rgba(255,255,255,0.04)}
+    html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#071021 0%, #091526 100%);color:#e6eef6}
+    .container{max-width:980px;margin:28px auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+    header h1{font-size:18px;margin:0}
+    header .meta{font-size:13px;color:var(--muted)}
+
+    .card{background:var(--card);border-radius:10px;padding:14px;margin-bottom:14px;box-shadow:0 6px 18px rgba(2,8,23,0.6)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:16px}
+    .components table{width:100%;border-collapse:collapse;font-size:14px}
+    .components th{font-weight:600;text-align:left;padding:8px 6px;border-bottom:1px solid rgba(255,255,255,0.04);color:var(--muted)}
+    .components td{padding:10px 6px;border-bottom:1px dashed rgba(255,255,255,0.03)}
+    .price{font-weight:700;color:var(--accent);text-align:right}
+    .small{font-size:13px;color:var(--muted)}
+
+    .aside img{max-width:100%;border-radius:6px;display:block}
+    .row{display:flex;justify-content:space-between;align-items:center}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:#072031;text-decoration:none;font-weight:600}
+
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}.aside{order:-1}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Presupuesto de PC — Gaming & Streaming</h1>
+        <div class="meta">Resumen corto de componentes y notas de compatibilidad</div>
+      </div>
+      <div class="meta">Fecha: 19 Sep 2025 • Maximus Gaming Hardware</div>
+    </header>
+
+    <div class="grid">
+      <main class="card components">
+        <h2 style="margin-top:0">Lista de componentes</h2>
+        <table>
+          <thead>
+            <tr><th>Componente</th><th style="width:150px">Precio (ARS)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Procesador: Intel Core i5-10400F 4.3GHz (s.1200)</td><td class="price">$193.300</td></tr>
+            <tr><td>Motherboard: ASRock B560M-HDV R3.0 (s.1200)</td><td class="price">$114.900</td></tr>
+            <tr><td>Memoria RAM: Kingston Fury Beast RGB 16GB (2×8) DDR4-3200</td><td class="price">$129.500</td></tr>
+            <tr><td>GPU: Gigabyte GeForce RTX 3050 WINDFORCE V2 OC 6GB</td><td class="price">$348.900</td></tr>
+            <tr><td>SSD: Kingston NV3 1TB M.2 NVMe PCIe 4.0</td><td class="price">$105.900</td></tr>
+            <tr><td>Fuente: Gigabyte P550SS 550W 80 Plus Silver</td><td class="price">$73.800</td></tr>
+            <tr><td>Gabinete: Thermaltake S100 Black Tempered Glass</td><td class="price">$66.200</td></tr>
+            <tr><td>Monitor: Solarmax 19" SX19F2 HD HDMI / VGA</td><td class="price">$78.800</td></tr>
+            <tr><td>Combo Teclado + Mouse: Logitech MK220 inalámbrico</td><td class="price">$30.100</td></tr>
+            <tr><td>Auriculares: Fury Warhawk RGB Black-Blue</td><td class="price">$13.900</td></tr>
+            <tr><td>Windows 11 (licencia — ejemplo local)</td><td class="price">$14.751</td></tr>
+            <tr><td style="font-weight:700">Total estimado</td><td class="price">$1.324.251</td></tr>
+          </tbody>
+        </table>
+
+        <section style="margin-top:12px">
+          <h3 style="margin:6px 0">Notas rápidas</h3>
+          <p class="small">Compatibilidad: CPU i5-10400F ✓, placa B560 (LGA1200) ✓, RAM DDR4 DIMM 2×8 ✓. GPU RTX 3050 compatible con PSU 550W. Cooler stock incluido.</p>
+        </section>
+
+      </main>
+
+      <aside class="card aside">
+        <h3 style="margin-top:0">Documento / Presupuesto</h3>
+        <p class="small">Imagen adjunta del presupuesto original (uso referencial).</p>
+        <img src="/mnt/data/presupuesto-maximus_page-0001.jpg" alt="Presupuesto Maximus" />
+        <div style="margin-top:12px" class="row">
+          <span class="small">Ficha corta</span>
+          <a class="btn" href="#">Imprimir</a>
+        </div>
+      </aside>
+    </div>
+
+    <footer style="margin-top:18px;text-align:center;color:var(--muted);font-size:13px">Documento generado: resumen técnico. Revisa compatibilidades y medidas físicas (GPU length, cooler height) antes de comprar.</footer>
+  </div>
+  
+  <section class="component-justification">
+  <h2>Justificación de cada componente seleccionado</h2>
+
+  <h3>Procesador: Intel Core i5-10400F (4.3 GHz, 6 núcleos / 12 hilos)</h3>
+  <p>Tiene una muy buena relación con respecto al precio-rendimiento. Su arquitectura Comet Lake ofrece potencia suficiente para juegos modernos y streaming fluido. No se calienta demasiado y funciona bien con el cooler de fábrica.</p>
+
+  <h3>Motherboard: ASRock B560M-HDV R3.0 (Socket 1200)</h3>
+  <p>Es sólida y confiable. Permite aprovechar toda la velocidad del procesador y memorias DDR4 de hasta 3200 MHz. Dispone de ranura M.2 NVMe, puertos USB 3.2 y un diseño compacto ideal para gabinetes medianos.</p>
+
+  <h3>Memoria RAM: Kingston Fury Beast RGB 16GB 3200 MHz DDR4</h3>
+  <p>Gran capacidad y velocidad, ideal para multitarea, edición y juegos exigentes. Su iluminación RGB agrega estética sin comprometer el rendimiento. Ofrece estabilidad y compatibilidad con las placas Intel.</p>
+
+  <h3>Tarjeta Gráfica: Gigabyte RTX 3050 WINDFORCE V2 OC 6GB GDDR6</h3>
+  <p>Es ideal para gaming en 1080p y streaming. Su doble ventilador WINDFORCE mantiene bajas temperaturas, y el codificador NVENC de NVIDIA permite transmitir sin afectar los FPS.</p>
+
+  <h3>Almacenamiento: SSD Kingston NV3 1TB M.2 NVMe PCIe 4.0</h3>
+  <p>Tiene velocidades de lectura/escritura muy superiores a los SSD SATA, ideal para tiempos de carga mínimos, además de que se encuentra a un buen precio.</p>
+
+  <h3>Fuente: Gigabyte P550SS 550W 80 Plus Silver ATX 3.0</h3>
+  <p>Esta fuente es moderna y, sobre todo, eficiente con una certificación 80 Plus Silver. Su potencia cubre sobradamente esta configuración y deja margen para ampliaciones a futuro. Tiene un precio justificado.</p>
+
+  <h3>Gabinete: Thermaltake S100 Black Tempered Glass</h3>
+  <p>Un diseño elegante con vidrio templado, posee una excelente gestión del flujo de aire y espacio interno optimizado para montaje limpio. Es, ante todo, un gabinete estéticamente bueno.</p>
+
+  <h3>Monitor: Solarmax 19" SX19F2 HD HDMI/VGA</h3>
+  <p>Muy económico y funcional. Su conexión HDMI lo hace compatible con GPUs modernas y ofrece buena calidad de imagen para tareas cotidianas o streaming en 720p.</p>
+
+  <h3>Periféricos: Combo Logitech MK220 Inalámbrico</h3>
+  <p>Confiable y con gran duración de batería. Es ideal para escritorios cuidados que no tengan cables molestos rondando por ahí.</p>
+
+  <h3>Auriculares: Fury Warhawk RGB Black-Blue</h3>
+  <p>Tiene un diseño atractivo con iluminación RGB y un sonido decente para juegos. Buena relación precio-calidad para jugar partidas largas.</p>
+</section>
+<section class="component-comparison">
+  <h2>Comparación entre algunos componentes y sus alternativas</h2>
+
+  <h3>Comparación de GPU</h3>
+  <p><strong>Gigabyte RTX 3050 WINDFORCE V2 OC 6GB (mi elección)</strong></p>
+  <ul>
+    <li>Ventajas: codificador NVENC moderno, bajo consumo, buen rendimiento 1080p/720p, relativamente accesible.</li>
+  </ul>
+
+  <p><strong>Alternativa: NVIDIA RTX 2060 / 2060 SUPER 6GB</strong></p>
+  <ul>
+    <li>Ventajas: rendimiento más alto en juegos exigentes, mejor margen para mods/shaders pesados mientras se hacen streams.</li>
+    <li>Desventajas: más consumo, puede requerir fuente de mayor calidad, mayor costo.</li>
+  </ul>
+
+  <p>Ambas tarjetas son compatibles con la fuente de 550W y el resto de la configuración, siempre que la fuente tenga el conector PCIe adecuado.</p>
+
+  <h3>Comparación de RAM</h3>
+  <p><strong>Kingston Fury Beast RGB 16GB DDR4-3200 (2×8GB) (mi elección)</strong></p>
+  <ul>
+    <li>Ventajas: buena velocidad, dual channel, iluminación RGB, excelente para streaming y juegos.</li>
+  </ul>
+
+  <p><strong>Alternativa: Corsair Vengeance LPX 16GB DDR4-3200 (2×8GB)</strong></p>
+  <ul>
+    <li>Ventajas: reputación alta, perfiles XMP confiables, bajo perfil (mejor compatibilidad con disipadores grandes), muy estable.</li>
+    <li>Desventajas: sin RGB, ligeramente más caro en algunos casos.</li>
+  </ul>
+</section>
+
+<section class="page-and-performance">
+  <h2>Página seleccionada</h2>
+  <p><strong>Enlace:</strong> <a href="https://www.maximus.com.ar/" target="_blank">https://www.maximus.com.ar/</a></p>
+  <p>Seleccioné esta página debido a la variedad de procesadores, placas madre y tarjetas gráficas que encontré cuando ingresé, que, de hecho, fueron las búsquedas más complicadas debido al alto precio que están cotizando en páginas más “sofisticadas” en estos días. 
+  <br>Max Tecno es otra página que encontré para investigar sobre los precios de los componentes, no la elegí porque los precios de las placas madre costaban más de lo que encontré en la web Maximus, y eso era una puesta en jaque para el presupuesto que tenemos para formar nuestra computadora.</p>
+
+  <h2>Análisis de rendimiento esperado</h2>
+  <p>Con la configuración elegida, la PC tiene una muy buena base para jugar y stremear Minecraft a una calidad de 720p. 
+  El procesador Intel i5-10400F cuenta con seis núcleos y doce hilos, lo que le da suficiente potencia para manejar el juego junto al software de streaming. 
+  Además, la tarjeta gráfica RTX 3050 aporta no solo buen rendimiento en juegos, sino también un codificador de video (NVENC) que permite aliviar la carga del procesador durante las transmisiones en vivo. 
+  Es gracias a eso que la experiencia de streaming se vuelve más fluida y estable.</p>
+
+  <p>En un escenario de Minecraft sin shaders ni mods pesados, se pueden esperar tasas de cuadros muy altas. 
+  El juego se movería entre <strong>200 y 300 FPS sin transmisión</strong>, y al activar el stream, la caída es mínima: los valores deberían rondar entre <strong>170 y 220 FPS</strong>, más que suficiente para un juego tan ligero.</p>
+
+  <p>Si se usan shaders ligeros o mods de complejidad media, el consumo de recursos aumenta, pero la PC sigue respondiendo bien. 
+  En ese caso, los FPS sin transmisión se ubicarían entre <strong>120 y 180</strong>, y al stremear bajarían a unos <strong>100-140 FPS</strong>. 
+  La experiencia seguiría siendo estable, especialmente si se ajusta la distancia de renderizado o se reducen ciertos efectos visuales.</p>
+
+  <p>En un escenario más exigente con shaders pesados o distancia de renderizado alta, los FPS caerían más: entre <strong>60 y 100 FPS sin transmitir</strong>, y de <strong>50 a 70 FPS al hacerlo</strong>. 
+  Aunque el rendimiento baja, sigue siendo suficiente para sostener una transmisión a 720p con 60 FPS, siempre que se optimicen las configuraciones gráficas.</p>
+
+  <p><strong>Conclusión:</strong> la PC está capacitada para jugar y transmitir Minecraft a 720p de forma fluida. 
+  Con configuraciones moderadas, incluso podría superar los 100 FPS durante el streaming, y con ajustes más ambiciosos seguiría ofreciendo una buena calidad de juego y transmisión.</p>
+</section>
+
+<section class="ia-interaction">
+  <h2>Capturas de interacción con IA</h2>
+
+  <div class="ia-chat">
+    <figure>
+      <img src="00.PNG" alt="Pregunta sobre GPU para streamear Detroit: Become Human" style="max-width: 80%; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.4); margin-bottom: 15px;">
+      <figcaption>Consulta sobre la elección de una tarjeta gráfica para streamear <em>Detroit: Become Human</em>.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="01.PNG" alt="Respuesta de la IA sobre GPU para Detroit: Become Human" style="max-width: 80%; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.4); margin-bottom: 15px;">
+    </figure>
+
+    <figure>
+      <img src="02.PNG" alt="Requisitos gráficos oficiales de Detroit: Become Human" style="max-width: 80%; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.4); margin-bottom: 15px;">
+    </figure>
+
+    <figure>
+      <img src="03.PNG" alt="Captura adicional de interacción con IA" style="max-width: 80%; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.4); margin-bottom: 15px;">
+    </figure>
+  </div>
+</section>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videojuegos por Procesador Intel Core</title>
+</head>
+<body>
+
+<header>
+    <div>
+        <h2>Videojuegos que se pueden jugar teniendo un procesador Intel Core i3, Intel Core i5, Intel Core i7, Intel Core i9</h2>
+    </div>
+</header>
+
+<section>
+    
+    <article>
+        <h2>1. Intel Core i3</h2>
+        <ul>
+            <li>Nivel de CPU: Básico / entrada. Generalmente 2-4 núcleos y 4-8 hilos, frecuencia base moderada.</li>
+            <li>Juegos recomendados:
+                <ul>
+                    <li>Juegos ligeros o menos exigentes: *Minecraft, Among Us, Stardew Valley, The Sims 4, Fortnite* a configuraciones bajas/medias.</li>
+                    <li>Juegos competitivos de eSports: *CS:GO, League of Legends, Valorant, Rocket League* en settings bajos-medios.</li>
+                </ul>
+            </li>
+            <li>Limitaciones: No es ideal para juegos AAA modernos a alta resolución y alta tasa de cuadros, porque la CPU puede volverse cuello de botella si la GPU es potente.</li>
+        </ul>
+        <hr>
+    </article>
+
+    <article>
+        <h2>2. Intel Core i5</h2>
+        <ul>
+            <li>Nivel de CPU: Medio / mainstream. Normalmente 4-6 núcleos (modelos más recientes hasta 6-10 hilos o más).</li>
+            <li>Juegos recomendados:
+                <ul>
+                    <li>Juegos AAA actuales: *Assassin's Creed Valhalla, Cyberpunk 2077, Elden Ring*, a configuraciones medias-altas dependiendo de la GPU.</li>
+                    <li>eSports competitivos: *Valorant, Fortnite, CS:GO, LoL* a altas tasas de FPS.</li>
+                </ul>
+            </li>
+            <li>Ventaja: Buen balance entre rendimiento y precio; puede manejar la mayoría de juegos modernos sin problemas.</li>
+        </ul>
+        <hr>
+    </article>
+
+    <article>
+        <h2>3. Intel Core i7</h2>
+        <ul>
+            <li>Nivel de CPU: Alto / entusiasta. Normalmente 6-8 núcleos o más, con hyperthreading.</li>
+            <li>Juegos recomendados:
+                <ul>
+                    <li>Juegos AAA en alta o ultra resolución (1080p/1440p, incluso 4K con buena GPU).</li>
+                    <li>Juegos que requieren mucho CPU: simuladores (*Microsoft Flight Simulator, Cities: Skylines*), MMOs grandes (*World of Warcraft* con addons), y títulos de estrategia (*Total War, Civilization VI*).</li>
+                </ul>
+            </li>
+            <li>Ventaja: Compatible con streaming y grabación mientras juegas sin que baje el rendimiento.</li>
+        </ul>
+        <hr>
+    </article>
+
+    <article>
+        <h2>4. Intel Core i9</h2>
+        <ul>
+            <li>Nivel de CPU: Entusiasta / extremo. 8-16 núcleos o más, hyperthreading, frecuencias muy altas.</li>
+            <li>Juegos recomendados:
+                <ul>
+                    <li>Todos los juegos AAA al máximo detalle y tasas altas de FPS.</li>
+                    <li>Streaming, edición de video o render mientras juegas sin impacto en rendimiento.</li>
+                    <li>Juegos que usan muchos hilos como simuladores complejos o títulos multihilo intensivos.</li>
+                </ul>
+            </li>
+            <li>Ventaja: Es el CPU más preparado para futuro y multitarea extrema; ideal si quieres jugar, hacer streaming, grabar y renderizar al mismo tiempo.</li>
+        </ul>
+    </article>
+    
+</section>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Comparativa de Procesadores</title>
+</head>
+<body>
+
+<header>
+    <div>
+        <h2>Tabla comparativa generada con ayuda de IA y validación</h2>
+    </div>
+</header>
+
+<section>
+    
+    <article>
+        <h2>Comparativa de procesadores Intel Core y AMD Ryzen (septiembre 2025)</h2>
+        <p>A continuación, se presenta una comparación de modelos recientes de Intel y AMD, incluyendo sus especificaciones, precios estimados y críticas destacadas por medios especializados.</p>
+        <hr>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Modelo</th>
+                    <th>Arquitectura</th>
+                    <th>Núcleos / Hilos</th>
+                    <th>Frecuencia Máxima</th>
+                    <th>Precio Estimado</th>
+                    <th>Uso Recomendado</th>
+                    <th>Críticas Destacadas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Intel Core Ultra 9 285K</td>
+                    <td>Arrow Lake-S</td>
+                    <td>24 (8P + 16E)</td>
+                    <td>Hasta 5.7 GHz</td>
+                    <td>$549 USD</td>
+                    <td>Productividad avanzada</td>
+                    <td>
+                        <ul>
+                            <li>Mejoras en tareas multihilo.</li>
+                            <li>Rendimiento en juegos similar al i9-14900K.</li>
+                            <li>Mayor consumo energético.</li>
+                            <li>Precio elevado en comparación con generaciones anteriores.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>AMD Ryzen 9 9950X</td>
+                    <td>Zen 5</td>
+                    <td>16 / 32</td>
+                    <td>Hasta 5.7 GHz</td>
+                    <td>$649 USD</td>
+                    <td>Alto rendimiento general</td>
+                    <td>
+                        <ul>
+                            <li>Excelente en tareas multihilo.</li>
+                            <li>Consumo energético más alto que el Ryzen 7 9700X.</li>
+                            <li>Precio elevado en comparación con generaciones anteriores.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>AMD Ryzen 7 9700X</td>
+                    <td>Zen 5</td>
+                    <td>8 / 16</td>
+                    <td>Hasta 5.5 GHz</td>
+                    <td>$318 USD</td>
+                    <td>Gaming y multitarea ligera</td>
+                    <td>
+                        <ul>
+                            <li>Buen rendimiento en juegos.</li>
+                            <li>Consumo energético moderado.</li>
+                            <li>Precio competitivo.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Intel Core Ultra 3 205</td>
+                    <td>Arrow Lake-S</td>
+                    <td>8 (4P + 4E)</td>
+                    <td>4.9 GHz</td>
+                    <td>$140-$150 USD</td>
+                    <td>Uso básico y juegos ligeros</td>
+                    <td>
+                        <ul>
+                            <li>Rendimiento superior al i3-14100.</li>
+                            <li>Consumo energético eficiente.</li>
+                            <li>Limitado en tareas intensivas.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p>
+            <br>
+            *Los precios y especificaciones están basados en los datos de septiembre de 2025. Los precios al por menor pueden variar (RVPR: Retailer's Suggested Price).
+        </p>
+    </article>
+    
+</section>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicación Técnica: Shaders</title>
+</head>
+<body>
+
+<header>
+    <div>
+        <h2>Explicación técnica traducida</h2>
+    </div>
+</header>
+
+<section>
+    <article>
+        <h2>¿Qué son los shaders de un videojuego?</h2>
+        <p>
+            Los **shaders** en un videojuego son programas pequeños que se ejecutan en la **GPU** (tarjeta gráfica) y se encargan de determinar cómo se ve cada píxel, vértice o fragmento de la imagen que se está mostrando en pantalla. En otras palabras, son los responsables de crear los efectos visuales y darle realismo o estilo artístico a los gráficos del juego.
+        </p>
+
+        <p>Se pueden clasificar principalmente en:</p>
+        
+        <ol>
+            <li>
+                <h3>Vertex Shaders</h3>
+                <ul>
+                    <li>Procesan cada vértice de un modelo 3D.</li>
+                    <li>Deciden la posición final en la pantalla del vértice.</li>
+                    <li>También pueden modificar atributos como color, normales o coordenadas de textura.</li>
+                    <li>Ejemplo: Hacer que un personaje se deforme al correr, o animar hojas de un árbol moviéndose con el viento.</li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                <h3>Fragment (o Pixel) Shaders</h3>
+                <ul>
+                    <li>Procesan cada fragmento/píxel que terminará en la pantalla.</li>
+                    <li>Determinan su color, brillo, transparencia, reflejos, sombras, etc.</li>
+                    <li>Ejemplo: Crear un efecto de agua que refleja la luz, o un cristal transparente que distorsiona lo que está detrás.</li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                <h3>Compute Shaders</h3>
+                <ul>
+                    <li>Más avanzados; no necesariamente dibujan nada directamente.</li>
+                    <li>Se usan para cálculos complejos en la GPU, como simulaciones de física, partículas, inteligencia artificial, o efectos de postprocesado.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <hr>
+
+        <p>
+            Dicho con mis propias palabras, los shaders son un grupo de programas, relacionados profundamente con la Tarjeta gráfica, que se encargan del estilo de arte que se nos muestra de un videojuego. Pueden variar entre los gráficos más visualmente increíbles, aquellos que tienen detalles lujosos, o los gráficos más escasos, simples, que se muestran de una forma más superficial. Por ejemplo: activar los shaders en **Minecraft** involucra el poder ser testigo de gráficos apreciables en donde cada estructura del Mundo (área en donde se traslada el jugador) tiene una forma definida, tiene partes iluminadas y otras partes con sombra. Un Mundo visualmente redondo; por otra parte, desactivarlos llevaría a lo contrario, dando lugar a un Mundo carente de detalles, en donde todo se vería más plano.
+        </p>
+    </article>
+</section>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen del Proyecto</title>
+</head>
+<body>
+
+
+
+<section>
+    <article>
+        <h2>Imagen creada por IA que represente el proyecto</h2>
+        <p>Esta imagen generada por IA busca capturar la esencia de la pasión por los videojuegos y la apreciación de los momentos personales, incluso dentro del mundo digital.</p>
+        <br>
+        <div>
+            <img src= "https://github.com/RusitaEveling1503/grupo_22/blob/Naahhwell/Imagenes%20e%20interacciones%20con%20IA/Streamer%20disfrutando%20de%20Minecraft%20mientras%20llega%20la%20noche.png" alt="Joven streamer disfrutando del atardecer en el videojuego Minecraft">
+            <p><strong>“Joven streamer disfrutando del atardecer en el videojuego Minecraft”</strong></p>
+            <p>La intención de la imagen reside en marcar la importancia de los gustos personales al menos una vez cada tanto, principalmente en una parte del día tan atractiva como el atardecer.</p>
+        </div>
+    </article>
+</section>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conclusiones del Trabajo Práctico</title>
+</head>
+<body>
+
+
+<section>
+    <article>
+        <h2>Conclusiones</h2>
+        <p>
+            La IA me brindó muy buena ayuda a lo largo del Trabajo práctico, destacando la investigación de los componentes de mi propia computadora, tarea que sigue resultándome complicada debido a que carezco de conocimientos sobre cuáles componentes coinciden con cuales otros. Además me benefició en el análisis del rendimiento que se esperaría al realizar un stream sobre el videojuego seleccionado, Minecraft, desarrollando el por qué del cambio de FPS y cómo impactaría en el stream; otra ayuda relevante es la creación de la imagen del joven streamer jugando Minecraft por el atardecer.
+        </p>
+        <p>
+            Los errores que detecté se hallan en la comparación de los distintos procesadores de Intel Core y AMD Ryzen, en donde hubo precios menores a los que encontré en sitios web. Un caso es el del procesador AMD Ryzen 7, que aparecía con un precio de 318 USD en la respuesta de la IA mientras que en el sitio web Amazon aparecía a 359, rebajado a 299. Apartando ese ligero error de precios, no encontré ninguno más.
+        </p>
+        <p>
+            En casos como investigar los requisitos de un videojuego o buscar los mismos componentes seleccionados pero en otras páginas oficiales es cuando tengo la posibilidad de trabajar manualmente.
+        </p>
+    </article>
+</section>
+
+</body>
+</html>
+
+</body>
+</html>
