@@ -2,457 +2,156 @@
   body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color:#133;
-    color: #e0e0e0;
+    color: #111111;
   }
 
   header {
-    background-color: #133;
-    padding: 10px;
-    text-align: center;
-  }
-
-  .header {
-    color: #ffffff;
     background-color: rgb(21, 94, 94);
     padding: 10px;
-    text-align: center;
+    text-align: justify;
     border: none;
   }
 
-  section {
-    background-color: #143;
+  article{
     padding: 15px;
     margin-bottom: 20px;
+    padding-top: 20px;
     border-radius: 5px;
   }
 
   h1, h2 {
-    color: #ffffff;
+    color: #111111;
   }
 
-  a {
-    color: #66b2ff;
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-  .precio {
-    font-weight: bold;
-    color: #66b2ff;
-    min-width: 120px;
-    text-align: right;
-    font-size: 1.1em;
-  }
-
-  .comparation {
-    margin-left: 30px;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-radius: 4px;
-  }
-
-  .comparativa-streaming {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .bloque-iteme {
-    background-color: #143;
-    padding: 15px;
-    border-radius: 8px;
-  }
-
-  .titulo-iteme {
-    font-weight: bold;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    color: #ffffff;
-  }
-
-  .fila-comparacion {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-
-  .columna-comparacion {
-    width: 48%;
-  }
-
-  .columna-comparacion p {
-    margin: 0 0 5px 0;
-    color: #e0e0e0;
-  }
-
-  .columna-comparacion ul {
-    margin: 0;
-    padding-left: 20px;
-  }
-
-  .columna-comparacion li {
-    margin-bottom: 5px;
-    color: #cfcfcf;
-  }
-
-  .items {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .item {
-    display: flex;
-    justify-content: space-between;
+  .container {
+    background-color: lightsteelblue;
     align-items: center;
-    background-color: #153;
-    padding: 15px;
     border-radius: 6px;
   }
 
-  .detalle {
-    max-width: 70%;
+  .content {
     margin: 20px;
   }
 
-  .detalle h2 {
-    margin: 0 0 5px 0;
-    font-size: 1.1em;
-    color: #ffffff;
-  }
-
-  .detalle p {
-    margin: 0;
-    font-size: 0.95em;
-    color: #cccccc;
-  }
-  .totales {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    background-color:  #135;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
-  }
-
-  .total-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.1em;
-    color: #ffffff;
-    border-bottom: 1px solid #133;
-    padding-bottom: 8px;
-  }
-
-  .total-label {
-    font-weight: bold;
-  }
-
-  .total-precio {
-    color: #66b2ff;
-    font-weight: bold;
-    font-size: 1.2em;
-    text-align: right;
-    min-width: 140px;
-  }
 </style>
 
 <header>
-    <h1 class="header">Configuración de PC Gamer</h1>
+    <h1 class="header">Capturas e Interacciones con Copilot</h1>
         <br>
-    <h2 class="header">Compontentes de la pc</h2>
 </header>
 
 <section>
     <hr>
-    <div class="items">
-        <article class="item">
-            <div class="detalle">
-                <h2>Procesador (CPU)</h2>
-                <p>AMD Ryzen 5 4500 - AM4</p>
-                    <ul>
-                        <li>Núcleos: 6</li>
-                        <li>Hilos: 12</li>
-                        <li>Incluye cooler</li>
-                        <li>Soporta RAM DDR4</li>
-                        <li>Potencia TDP: 65W</li>
-                        <li>Referencia:   <a href="https://bestinformatica.com.ar/itemes-de-pc/procesadores/procesador-amd-am4-ryzen-5-4500-65w-325273.html">Best Informática</a></li>
-                    </ul>
+    <div>
+        <article class="container">
+            <div class="content">
+                <h2>1 - Capturas de interaccion con IA</h2>
+                <p>Le pregunte a Copilot "¿Qué procesador es mejor para streamear Minecraft con shaders y mantener más de 60 FPS?"</p>
+                <img src="Imagenes/CapturasIA/1er_Prompt.png">
+                <p>Reflexion:
+                    Al haber experimentado Minecraft con Shaders con un Ryzen 5 1600 Af, entiendo como la copilot llego 
+                    a esa conclusion y estoy de acuerdo, puesto que el renderizado de chunks era un poco bajo y no se podia
+                    jugar minecraft en simultaneo con un reproductor de musica o el chrome para reproducir Youtube, la calidad
+                    de los FPS disminuia entre 30 y 40 que no es muy comodo para un usuario o espectador, por eso entiendo que
+                    haya hecho esa recomendacion, en complemento con una buena grafica el streaming a 120FPS y 1080 no deberia 
+                    ser un obstaculo.
+                </p>
             </div>
-            <div class="precio">$120.382</div>
         </article>
 
-        <article class="item">
-                <div class="detalle">
-                    <h2>Motherboard</h2>
-                    <p>Asus Prime A520m-k/csm</p>
-                    <ul>
-                        <li>Formato: mATX</li>
-                        <li>Zócalo: AM4</li>
-                        <li>Soporta Ryzen 4000</li>
-                        <li>Referencia:   <a href="https://bestinformatica.com.ar/itemes-de-pc/motherboards/mother-asus-am4-prime-a520m-k-csm-342116.html">Best Informática</a></li>
-                    </ul>
+        <article class="container">
+                <div class="content">
+                    <h2>2 - Comparacion de Componentes</h2>
+                    <p>Le pedi a Copilot que me compare dos Placas de Video</p>
+                    <p>"Que es mejor? una Placa De Video Asus Geforce RTX 3050 o una VGA MSI GEFORCE GTX 1630 4GB/GDDR6/DUAL FAN/VENTUS"</p>
+                    <img alt="Verificacion de fuentes I" src="Imagenes/CapturasIA/2do_Prompt_I.png">
+                    <p>La tabla comparativa generada por la IA</p>
+                    <img  alt="verificacion de fuente II" src="Imagenes/CapturasIA/2do_Prompt_II.png">
+                    <p>La fuente que valida los datos obtenidos</p>
+                    <p>En mi caso, elegi la primera ya que sus caracteristicas son mejores, es mas actual y 
+                        esta a la venta en casi cualquier sitio web ademas, si fuera a jugar yo sola o con amigos, 
+                        sin transmitir tener acciones en simultaneo sin duda elegiria la mas viejita por su bajo costo.
+                    </p>
                 </div>
-                <div class="precio">$101.005</div>
-        </article>
-
-        <article class="item">
-                <div class="detalle">
-                    <h2>Memoria RAM</h2>
-                    <p>Kingston RAM DDR4</p>
-                    <ul>
-                        <li>4° Generación</li>
-                        <li>Capacidad: 16GB</li>
-                        <li>3200 3200MHz</li>
-                        <li>Referencia:   <a href="L0005-2 presupuesto INSUMAX.pdf">INSUMAX</a></li>
-                    </ul>
-                </div>
-                <div class="precio">$93.420</div>
-        </article>
-
-        <article class="item">
-                <div class="detalle">
-                    <h2>Almacenamiento</h2>
-                    <p> Disco SSD  Wd Green Sn350 Nvme</p>
-                    <ul>
-                        <li>Tipo: Unidad de estado Solido</li>
-                        <li>Conexion:M.2</li>
-                        <li>Capacidad: 500GB</li>
-                        <li>Referencia: <a href="https://bestinformatica.com.ar/itemes-de-pc/unidades-solidas-ssd/disco-ssd-m.2-500gb-wd-green-sn350-nvme-326931.html">Best Informática</a></li>
-                    </ul>
-                </div>
-                <div class="precio">$62.401</div>
-        </article>
-
-        <article class="item">
-                <div class="detalle">
-                    <h2>Placa de Video (GPU)</h2>
-                    <p>ASUS GeForce RTX 3050 Dual OC 6GB</p>
-                    <ul>
-                        <li>Marca: Nvidia</li>
-                        <li>Velocidad VRAM: 14 Gbps</li>
-                        <li>Referencia:   <a href="https://www.armytech.com.ar/placas-de-video/5127-placa-de-video-asus-geforce-rtx-3050-dual-oc-6gb.html">Armytech</a></li>
-                    </ul>
-                </div>
-                <div class="precio">$338.461</div>
-        </article>
-
-        <article class="item">
-                <div class="detalle">
-                    <h2>Gabinete</h2>
-                    <p>Aerocool Mecha ARGB Vidrio</p>
-                    <ul>
-                        <li>Formato: Mini-ITX / MicroATX / ATX</li>
-                        <li>Tamaño: Mid Tower</li>
-                        <li>Referencia:   <a href="https://www.armytech.com.ar/gabinetes-sin-psu/407-gabinete-gamer-aerocool-mecha-argb-vidrio-g-bk-v2.html">Armytech</a></li>
-                    </ul>
-                </div>
-                <div class="precio">$35.205</div>
-        </article>
-
-        <article class="item">
-                <div class="detalle">
-                    <h2>Fuente</h2>
-                    <p>Aureox 650W Bronze 80+ PSU</p>
-                    <ul>
-                        <li>Referencia:  <a href="https://bestinformatica.com.ar/itemes-de-pc/fuentes/fuente-gamer-aureox-650w-bronze-80+psu-325421.html">Best Informática</a></li>
-                    </ul>
-                </div>
-                <div class="precio">$87.411</div>
-        </article>
-
-
-            <div class="header">
-                <h1 class="header">Perifericos</h1>
-            </div>
-
  
+        </article>
 
-        <div class="item">
-            <div class="detalle">
-                <h2>Teclado + Mouse</h2>
-                <p>Genius Slimstar C126 Combo USB</p>
-                <p><a href="https://bestinformatica.com.ar/perifericos/teclados/genius-slimstar-c126-combo-teclado-y-mouse-black-325458.html">Best Informática</a></p>
-            </div>
-            <div class="precio">$18.124</div>
-        </div>
+        <article class="container">
+            <div class="content">
+            <h2>3 - Explicación técnica traducida</h2> 
+            <p>Le pedi a la Copilot que me explicara el significado de las siglas GTX y RTX</p>
+                    <div class="content">
+                        <h2>Explicación de la IA</h2>
+                    <p>GTX es una línea de placas de video de NVIDIA pensada para juegos con buen rendimiento, pero sin tecnologías avanzadas como Ray Tracing o inteligencia artificial.</p>
+                    <ul>
+                        <li>Buena para juegos en 1080p sin efectos avanzados.</li>
+                        <li>No tiene soporte para Ray Tracing ni DLSS.</li>
+                        <li>Más económica y de gama media o entrada.</li>
+                    </ul>
+                    </div>
+       
+                    <div class="content">
+                    <p>RTX es una línea más moderna y potente de NVIDIA. Incluye tecnologías como Ray Tracing (luces y sombras realistas) y DLSS (mejora de rendimiento con IA).</p>
+                    <ul>
+                        <li>Ideal para juegos exigentes y streaming.</li>
+                        <li>Incluye núcleos especiales para Ray Tracing y DLSS.</li>
+                        <li>Mejor rendimiento en gráficos y multitarea.</li>
+                    </ul>
+                    </div>
+                    <div class="content">
+                        <h2>Explicacion Traducida</h2>
+                        <p>GTX de las siglas en ingles (Giga Texel shader eXtreme), es una denominación
+                          de la empresa NVIDIA para nombrar a ciertos modelos de Placas de video, indicando
+                          su tipo de tecnologia. Las GTX son modelos mas viejos de calidad intermedia que 
+                          trabaja con graficos tradicionales y es de las mas buscadas por su bajo costo.</p>
+                        <p>La RTX de las siglas Ray Tracing texel eXtreme es la evolución de las GTX
+                          con técnologia mas avanzada en renderizado gráfico, pudiendo simular el comportamiento
+                          de la luz en un entorno 3D lo cual genera efectos visuales mas naturales y detallados.
+                        </p>
+                    </div>
+        </article>
+        <article class="container">
+                <div class="content">
+                    <h2>4 - Imagen generada con IA</h2>
+                    <p>Le pedi a Copilot que me generara una imagen de una chica stremeando minecraft con estas especificaciones:
+                      Generar una imagen de una chica en un dormitorio,
+                      jugando en un setup gamer a minecraft con shaders, que tenga posters de anime, 
+                      que este stremeando la partida, la chica debe vestir ropa de abrigo olgada y verse de espalas,
+                      tiene que destacarse la computadora y debe verse el juego, con luces tenues
+                      y la decoracion dada por una gama de azules y blancos
+                    </p>
+                      <img alt="Chica jugando Minecraft con Setup Gamer" src="Imagenes/CapturasIA/2da_Imagen_Generada_por_IA.png" title="Yo en un futuro">
+                    <p>La idea de esta imagen era plantear que las chicas
+                      tambien jugamos videojuegos y que no solo los chicos pueden aislarse a jugar en su mundo,
+                      habemos un porcentaje de la poblacion femenina que prefiere quedarse en casa a jugar con amigos.
+                    </p>
+                   
+                </div>
+        </article>
 
-        <div class="item">
-            <div class="detalle">
-                <h2>Monitor</h2>
-                <p>Solarmax 23.6" SX24F2 75Hz FHD HDMI/VGA</p>
-                <p>Resolución: 1920x1080 | Voltaje: 110/220V</p>
-                <p><a href="https://www.maximus.com.ar/Producto/Monitor-LED-VA-Solarmax-236-SX24F2-75hz-FHD-HDMI--VGA/ITEM=15549/maximus.aspx">Maximus Gaming Hardware</a></p>
-            </div>
-            <div class="precio">$137.056,69</div>
-        </div>
+        <article class="container">
+                <div class="content">
+                    <h2>5 - Conclusiones</h2>
+                    <p>
+                      En este trabajo la implementación de la inteligencia artificial fue una herramienta
+                      muy importante y muy útil, ya que investigar en foros o en sitios lleva mucho más tiempo. en cambio
+                      la IA puede investigar y codificar con más rapidez y casi sin errores. Es entretenido hacer el 
+                      ejercicio de pedir información u otros recursos, debiendo especificar lo que necesitas, aprendí más
+                      que de las veces que tuve que sentarme a investigar por mi cuenta sobre un tema en específico.
+                    </p>
+                    <p>Los errores que hubo resultaron ser en el precio de un UPS con determinadas características,
+                      que en las paginas web tenian una variación en el precio y no habia stock o ese articulo ya no estaba a la venta
+                      entonces ahí tuve que recurrir a buscar manualmente.
+                    </p>
+                    <p>
+                      Personalmente busco información manualmente cuando no se lo que estoy buscando o no se como preguntar
+                      que necesito, como en casos en donde recordas solo una palabra de un titulo de una serie o pelicula y vas probando
+                      hasta que encontras lo que queres, o cuando ves a un actor en una serie y queres saber el nombre pero no sabes como se
+                      llama nada que tenga que ver con él pero si sabes quíen que sí conoces aparece.
+                    </p>
+                </div>
 
-        <div class="item">
-            <div class="detalle">
-                <h2>Micrófono</h2>
-                <p>Trust Mantis GXT232 con cable USB</p>
-                <p><a href="https://fullh4rd.com.ar/prod/17904/microfono-trust-mantis-gxt232">Trust GXT232</a></p>
-            </div>
-            <div class="precio">$42.710,40</div>
-        </div>
-
-        <div class="item">
-            <div class="detalle">
-                <h2>Auriculares</h2>
-                <p>Trust Carus GXT492 Multiplataforma Black</p>
-                <p><a href="https://bestinformatica.com.ar/perifericos/parlantes-y-auriculares/auricular-trust-carus-multiplataforma-black-gxt492-377390.html">Best Informática</a></p>
-            </div>
-            <div class="precio">$59.067</div>
-        </div>
-
-        <div class="item">
-            <div class="detalle">
-                <h2>Estabilizador</h2>
-                <p>Lyonn TCA-1200N-V</p>
-                <p><a href="https://bestinformatica.com.ar/energia/upss/lyonn-estabilizador-elect.-tca-1200n-v-341885.html">Best Informática</a></p>
-            </div>
-            <div class="precio">$58.072</div>
-        </div>
-
-        <section class="totales">
-        <div class="total-item">
-            <div class="total-label">Total Hardware Principal</div>
-            <div class="total-precio">$838.285</div>
-        </div>
-        <div class="total-item">
-            <div class="total-label">Total Periféricos</div>
-            <div class="total-precio">$315.030,09</div>
-        </div>
-        <div class="total-item">
-            <div class="total-label">Total General</div>
-            <div class="total-precio">$1.153.315,09</div>
-        </div>
-        </section>
+        </article>
 </section>
-    <section>
-        <article class="item">
-            <div class="comparation">
-                <div class="header">
-                    <h2 class="header">Justificaciones y Comparaciones</h2>
-                </div>
-                <br>
-        <section>
-    <div class="comparativa-streaming">
-
-        <div class="bloque-iteme">
-            <div class="titulo-iteme">Procesador</div>
-            <div class="fila-comparacion">
-                <div class="columna-comparacion">
-                    <p>  INSUMAX:   Ryzen 3 3200G</p>
-                    <ul>
-                        <li>4 núcleos / 4 hilos</li>
-                        <li>Arquitectura Zen+</li>
-                        <li>Limitado para multitarea y streaming</li>
-                    </ul>
-                </div>
-                <div class="columna-comparacion">
-                    <p>  Tu opción:   Ryzen 5 4500</p>
-                    <ul>
-                        <li>6 núcleos / 12 hilos</li>
-                        <li>Arquitectura Zen 2</li>
-                        <li>Ideal para jugar y transmitir simultáneamente</li>
-                    </ul>
-                </div>
-            </div>    
-        </div>
-
-        <div class="bloque-iteme">
-            <div class="titulo-iteme">Placa Madre</div>
-            <div class="fila-comparacion">
-                <div class="columna-comparacion">
-                    <p> INSUMAX:   MSI A520M-A PRO OEM</p>
-                    <ul>
-                        <li>Versión OEM básica</li>
-                        <li>Menor soporte de BIOS</li>
-                    </ul>
-                </div>
-                <div class="columna-comparacion">
-                    <p> Tu opción:   Asus Prime A520M-K/CSM</p>
-                    <ul>
-                        <li>Versión comercial con soporte CSM</li>
-                        <li>Mayor confiabilidad y actualizaciones</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="bloque-iteme">
-        <div class="titulo-iteme">Memoria RAM</div>
-        <p>Ambas configuraciones incluyen Kingston DDR4 16GB 3200MHz, suficiente para Minecraft con shaders y streaming fluido.</p>
-        </div>
-
-        <div class="bloque-iteme">
-            <div class="titulo-iteme">Almacenamiento</div>
-            <div class="fila-comparacion">
-                <div class="columna-comparacion">
-                    <p> INSUMAX:   SSD 256GB NVMe Hiksemi</p>
-                    <ul>
-                        <li>Menor capacidad</li>
-                        <li>Marca menos reconocida</li>
-                    </ul>
-                </div>
-                <div class="columna-comparacion">
-                    <p> Tu opción:   SSD 500GB NVMe WD Green SN350</p>
-                    <ul>
-                        <li>Mayor espacio para grabaciones y mods</li>
-                        <li>Marca confiable y buen rendimiento</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="bloque-iteme">
-            <div class="titulo-iteme">Placa de Video (GPU)</div>
-            <div class="fila-comparacion">
-                <div class="columna-comparacion">
-                    <p> INSUMAX:   GTX 1630 4GB</p>
-                    <ul>
-                        <li>Sin Ray Tracing</li>
-                        <li>Limitada para shaders exigentes</li>
-                    </ul>
-                </div>
-                <div class="columna-comparacion">
-                    <p> Tu opción:   RTX 3050 6GB</p>
-                    <ul>
-                        <li>Ray Tracing y DLSS</li>
-                        <li>Más de 60 FPS con shaders en 1080p</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="bloque-iteme">
-            <div class="titulo-iteme">Fuente</div>
-            <div class="fila-comparacion">
-                <div class="columna-comparacion">
-                    <p> INSUMAX:   Sentey 600W (genérica)</p>
-                    <ul>
-                        <li>Sin certificación</li>
-                        <li>Riesgo de inestabilidad</li>
-                    </ul>
-                </div>
-                <div class="columna-comparacion">
-                    <p>  Tu opción:   Aureox 650W Bronze 80+</p>
-                    <ul>
-                        <li>Certificación 80+ Bronze</li>
-                        <li>Mayor eficiencia y protección</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-    </div>
-                </div>
-    </article>
-</section>
+    
 
