@@ -1,416 +1,521 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grupo 22</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', sans-serif;
+                background-color: #f5f5f5;
+                color: #333;
+                padding: 20px;
+            }
+            header{
+                margin-bottom: 150px;
+                border-bottom-color: darkslategray;
+                border-bottom-style: solid;
+                border-bottom-width: 2px;
+                padding-bottom: 60px;
+            }
+            h1 {
+                text-align: center;
+                font-size: 2.2em;
+                color: #2c3e50;
+                margin-bottom: 30px;
+            }
+            .items {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+            }
+            section, footer{
+                font-family: Arial, Helvetica, sans-serif;
+                line-height:1.25;
+                text-align: justify;
+                margin-bottom: 50px;
+            }
+            article {
+                background-color: #ffffff;
+                border-radius: 8px;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+                padding: 20px;
+            }
+            .header {
+                font-size: 1.6em;
+                color: #2980b9;
+                margin-bottom: 15px;
+                border-bottom: 2px solid #2980b9;
+                padding-bottom: 5px;
+            }
+            article p {
+                line-height: 1.6;
+                margin-bottom: 12px;
+            }
+            article a {
+                display: inline-block;
+                margin-bottom: 15px;
+                color: #27ae60;
+                text-decoration: none;
+                font-weight: bold;
+            }
 
-<header>
-    <h1 class="header">Configuración de PC Gamer</h1>
-        <br>
-    <h2 class="header">Compontentes de la pc</h2>
-</header>
+            article a:hover {
+                text-decoration: underline;
+            }
 
-<section>
-    <hr>
-    <div class="items">
-        <article class="item">
-            <div class="detalle">
-                <h2>Procesador (CPU)</h2>
-                <p>AMD Ryzen 5 4500 - AM4</p>
-                    <ul>
-                        <li>Núcleos: 6</li>
-                        <li>Hilos: 12</li>
-                        <li>Incluye cooler</li>
-                        <li>Soporta RAM DDR4</li>
-                        <li>Potencia TDP: 65W</li>
-                        <li>Referencia:   <a href="https://bestinformatica.com.ar/itemes-de-pc/procesadores/procesador-amd-am4-ryzen-5-4500-65w-325273.html">Best Informática</a></li>
-                    </ul>
-            </div>
-            <div class="precio">$120.382</div>
+            .totales {
+                background-color: #ecf0f1;
+                border-top: 2px solid #bdc3c7;
+                padding: 15px;
+                margin-top: 20px;
+                font-weight: bold;
+                font-size: 1.1em;
+                color: #2c3e50;
+            }
+            li{
+                list-style:none;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            p{
+                font-family: Arial, Helvetica, sans-serif;
+                line-height:1.25;
+                text-align: justify;
+             }
+            .minecraft_img{
+                alt: "Aquí había una imagen";
+                width: 600px;
+                height: 350px;
+            }
+            .caratula{
+                font-size: 20px;
+                font-weight: normal;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            .caratula_li{
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-left: 370px;
+            }
+            .h1_header{
+                font-size: 30px;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+            .title_component{
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+    </head>    
+    <body>
+        <header label="header">
+            <h1 class="h1_header">Universidad Autónoma de Entre Ríos</h1>
+            <h2 class="caratula">Facultad de Ciencia y Tecnología</h2>
+
+            <h2 class="caratula">Carrera: Licenciatura en Sistemas de Información</h2>
+            <h2 class="caratula">Cátedra: Fundamentos de Computación</h2>
+            <h2 class="caratula">Trabajo Práctico: “Streaming de videojuegos”</h2>
+
+            <h2 class="caratula">Profesores:</h2>
+            <ul>
+                <li class="caratula_li">Bioing. Ismael Cassi</li>
+                <li class="caratula_li">Lic. Paolo Orundés Cardinali (JTP)</li>
+            </ul>
+
+            <h2 class="caratula">Integrantes del Grupo:</h2>
+            <ul>
+                <li class="caratula_li">Andrian, Evangelina Luján</li>
+                <li class="caratula_li">Arrua, Nahuel</li>
+                <li class="caratula_li">Castrogiovanni, Marcos Daniel</li>
+                <li class="caratula_li">Larrea, Iris Anahí</li>
+                <li class="caratula_li">Otero, Ulises Fernando</li>
+            </ul>
+
+            <h2 class="caratula">Comisión: 3</h2>
+            <h2 class="caratula">Fecha de Entrega: Semana del 22 a 27</h2>
+            <h2 class="caratula">Año Lectivo: 2025</h2>
+        
+        </header>
+        <article label="Introduccion">
+            <h2>Introducción</h2>
+            <p>
+                En la actualidad, las plataformas de streaming se convirtieron en la gran novedad 
+                para jugar y compartir videojuegos. Muchos creadores de contenido dejaron de lado 
+                los espacios tradicionales, como YouTube, donde solo se subían videos grabados, 
+                para enfocarse en sitios como Twitch, Kick y otros. Estas plataformas ofrecen un 
+                formato en vivo que exige transmitir durante varias horas, jugar distintos juegos y, 
+                al mismo tiempo, interactuar con los seguidores y con otros streamers. De esta forma, 
+                no solo se comparten experiencias, sino que también se generan comunidades alrededor 
+                de los juegos.
+            </p>
+
+            <p>
+                En este trabajo elegimos enfocarnos en Minecraft, uno de los videojuegos más populares 
+                y accesibles de la última década. Este juego permite a los jugadores desarrollar 
+                habilidades como la creatividad y la resolución de problemas, además de la posibilidad 
+                de crear mods (modificaciones) que ofrecen experiencias nuevas cada semana. También se 
+                puede jugar en distintas plataformas como PC, celulares, consolas, entre otras.
+            </p>
+
+            <p>
+                Minecraft se destaca por sus diversos modos de juego, como supervivencia, creativo, 
+                multijugador o solitario, lo que lo hace interesante para diferentes tipos de jugadores. 
+                También, suele requerir un buen rendimiento de la computadora para poder jugar sin 
+                problemas, especialmente cuando se utilizan servidores o modificaciones.
+            </p>
+
+            <p>
+                El objetivo del presente trabajo es investigar qué requisitos técnicos se necesitan 
+                para correr y transmitir Minecraft en buena calidad y, a partir de ello, diseñar una 
+                propuesta de computadora que permita realizar streaming sin superar el presupuesto de 
+                1000 dólares establecido en las consignas. De esta manera, buscamos comprender mejor 
+                cómo se relacionan los distintos componentes del hardware con la experiencia de juego 
+                y la transmisión en vivo, incorporando además el uso de herramientas de Inteligencia 
+                Artificial como apoyo para la investigación y el análisis.
+            </p>
+
         </article>
-
-        <article class="item">
-                <div class="detalle">
-                    <h2>Motherboard</h2>
-                    <p>Asus Prime A520m-k/csm</p>
-                    <ul>
-                        <li>Formato: mATX</li>
-                        <li>Zócalo: AM4</li>
-                        <li>Soporta Ryzen 4000</li>
-                        <li>Referencia:   <a href="https://bestinformatica.com.ar/itemes-de-pc/motherboards/mother-asus-am4-prime-a520m-k-csm-342116.html">Best Informática</a></li>
-                    </ul>
-                </div>
-                <div class="precio">$101.005</div>
-        </article>
-
-        <article class="item">
-                <div class="detalle">
-                    <h2>Memoria RAM</h2>
-                    <p>Kingston RAM DDR4</p>
-                    <ul>
-                        <li>4° Generación</li>
-                        <li>Capacidad: 16GB</li>
-                        <li>3200 3200MHz</li>
-                        <li>Referencia:   <a href="L0005-2 presupuesto INSUMAX.pdf">INSUMAX</a></li>
-                    </ul>
-                </div>
-                <div class="precio">$93.420</div>
-        </article>
-
-        <article class="item">
-                <div class="detalle">
-                    <h2>Almacenamiento</h2>
-                    <p> Disco SSD  Wd Green Sn350 Nvme</p>
-                    <ul>
-                        <li>Tipo: Unidad de estado Solido</li>
-                        <li>Conexion:M.2</li>
-                        <li>Capacidad: 500GB</li>
-                        <li>Referencia: <a href="https://bestinformatica.com.ar/itemes-de-pc/unidades-solidas-ssd/disco-ssd-m.2-500gb-wd-green-sn350-nvme-326931.html">Best Informática</a></li>
-                    </ul>
-                </div>
-                <div class="precio">$62.401</div>
-        </article>
-
-        <article class="item">
-                <div class="detalle">
-                    <h2>Placa de Video (GPU)</h2>
-                    <p>ASUS GeForce RTX 3050 Dual OC 6GB</p>
-                    <ul>
-                        <li>Marca: Nvidia</li>
-                        <li>Velocidad VRAM: 14 Gbps</li>
-                        <li>Referencia:   <a href="https://www.armytech.com.ar/placas-de-video/5127-placa-de-video-asus-geforce-rtx-3050-dual-oc-6gb.html">Armytech</a></li>
-                    </ul>
-                </div>
-                <div class="precio">$338.461</div>
-        </article>
-
-        <article class="item">
-                <div class="detalle">
-                    <h2>Gabinete</h2>
-                    <p>Aerocool Mecha ARGB Vidrio</p>
-                    <ul>
-                        <li>Formato: Mini-ITX / MicroATX / ATX</li>
-                        <li>Tamaño: Mid Tower</li>
-                        <li>Referencia:   <a href="https://www.armytech.com.ar/gabinetes-sin-psu/407-gabinete-gamer-aerocool-mecha-argb-vidrio-g-bk-v2.html">Armytech</a></li>
-                    </ul>
-                </div>
-                <div class="precio">$35.205</div>
-        </article>
-
-        <article class="item">
-                <div class="detalle">
-                    <h2>Fuente</h2>
-                    <p>Aureox 650W Bronze 80+ PSU</p>
-                    <ul>
-                        <li>Referencia:  <a href="https://bestinformatica.com.ar/itemes-de-pc/fuentes/fuente-gamer-aureox-650w-bronze-80+psu-325421.html">Best Informática</a></li>
-                    </ul>
-                </div>
-                <div class="precio">$87.411</div>
-        </article>
-
-
-            <div class="header">
-                <h1 class="header">Perifericos</h1>
-            </div>
-
- 
-
-        <div class="item">
-            <div class="detalle">
-                <h2>Teclado + Mouse</h2>
-                <p>Genius Slimstar C126 Combo USB</p>
-                <p><a href="https://bestinformatica.com.ar/perifericos/teclados/genius-slimstar-c126-combo-teclado-y-mouse-black-325458.html">Best Informática</a></p>
-            </div>
-            <div class="precio">$18.124</div>
-        </div>
-
-        <div class="item">
-            <div class="detalle">
-                <h2>Monitor</h2>
-                <p>Solarmax 23.6" SX24F2 75Hz FHD HDMI/VGA</p>
-                <p>Resolución: 1920x1080 | Voltaje: 110/220V</p>
-                <p><a href="https://www.maximus.com.ar/Producto/Monitor-LED-VA-Solarmax-236-SX24F2-75hz-FHD-HDMI--VGA/ITEM=15549/maximus.aspx">Maximus Gaming Hardware</a></p>
-            </div>
-            <div class="precio">$137.056,69</div>
-        </div>
-
-        <div class="item">
-            <div class="detalle">
-                <h2>Micrófono</h2>
-                <p>Trust Mantis GXT232 con cable USB</p>
-                <p><a href="https://fullh4rd.com.ar/prod/17904/microfono-trust-mantis-gxt232">Trust GXT232</a></p>
-            </div>
-            <div class="precio">$42.710,40</div>
-        </div>
-
-        <div class="item">
-            <div class="detalle">
-                <h2>Auriculares</h2>
-                <p>Trust Carus GXT492 Multiplataforma Black</p>
-                <p><a href="https://bestinformatica.com.ar/perifericos/parlantes-y-auriculares/auricular-trust-carus-multiplataforma-black-gxt492-377390.html">Best Informática</a></p>
-            </div>
-            <div class="precio">$59.067</div>
-        </div>
-
-        <div class="item">
-            <div class="detalle">
-                <h2>Estabilizador</h2>
-                <p>Lyonn TCA-1200N-V</p>
-                <p><a href="https://bestinformatica.com.ar/energia/upss/lyonn-estabilizador-elect.-tca-1200n-v-341885.html">Best Informática</a></p>
-            </div>
-            <div class="precio">$58.072</div>
-        </div>
-
-        <section class="totales">
-        <div class="total-item">
-            <div class="total-label">Total Hardware Principal</div>
-            <div class="total-precio">$838.285</div>
-        </div>
-        <div class="total-item">
-            <div class="total-label">Total Periféricos</div>
-            <div class="total-precio">$315.030,09</div>
-        </div>
-        <div class="total-item">
-            <div class="total-label">Total General</div>
-            <div class="total-precio">$1.153.315,09</div>
-        </div>
+      <hr/>
+        <section class="item" label="Nombre y descripcion del juego">
+            <article>
+                <p>El presente trabajo se centra en Minecraft Java Edition, un videojuego de tipo sandbox que mezcla aventura, acción, exploración y supervivencia. Fue creado por Markus Persson, conocido como Notch, y más tarde desarrollado por Mojang Studios. Una de las formas de juego más conocidas es la de supervivencia, donde el jugador tiene que juntar recursos, construir un refugio y defenderse de criaturas que aparecen de noche o en distintos lugares del mapa.</p>
+                <p>El mundo de Minecraft está dividido en tres dimensiones principales. La primera es el Overworld, que es el lugar donde empezamos y en el que hay bosques, montañas, mares y aldeas. Después está el Nether, un mundo peligroso lleno de lava, fortalezas y biomas de aspecto infernal. Y, por último, el End, un lugar oscuro donde espera el jefe final: la Dragona del Ender, además de otras estructuras llamadas ciudades del End.</p>
+                <p>En estos mundos aparecen diferentes criaturas enemigas, conocidas como mobs, que atacan al jugador de distintas maneras. Ellas hacen que la experiencia sea más desafiante y obligan a estar atento en todo momento. Para sobrevivir también hay que alimentarse, ya sea cazando animales como vacas, ovejas o cerdos, o bien cultivando alimentos como trigo y zanahorias.</p>
+                <p>La experiencia del juego empieza de forma simple: conseguir lo necesario para pasar la primera noche. A medida que se avanza, se van desbloqueando logros, fabricando herramientas, explorando templos, aldeas o fortalezas, y todo esto se puede vivir tanto en solitario como en modo multijugador, cooperando o compitiendo con otros. El jugador puede enfocarse en llegar al final del juego, enfrentando a la Dragona, o simplemente disfrutar de la libertad de crear y explorar.</p>
+                <p>Además, existen otros modos de juego. El modo Creativo ofrece recursos infinitos y está pensado para construir sin límites. El modo Hardcore, en cambio, es mucho más difícil: si el jugador muere, no puede volver a aparecer.</p>
+                <p>Hoy en día, Minecraft cuenta con más de 225 millones de jugadores alrededor del mundo, lo que lo convierte en uno de los videojuegos más importantes y populares de la historia.</p>
+            </article>
+                
         </section>
-</section>
-    <section>
-        <article class="item">
-            <div class="comparation">
-                <div class="header">
-                    <h2 class="header">Justificaciones y Comparaciones</h2>
-                </div>
-                <br>
-        <section>
-    <div class="comparativa-streaming">
-
-        <div class="bloque-iteme">
-            <div class="titulo-iteme">Procesador</div>
-            <div class="fila-comparacion">
-                <div class="columna-comparacion">
-                    <p>  INSUMAX:   Ryzen 3 3200G</p>
-                    <ul>
-                        <li>4 núcleos / 4 hilos</li>
-                        <li>Arquitectura Zen+</li>
-                        <li>Limitado para multitarea y streaming</li>
-                    </ul>
-                </div>
-                <div class="columna-comparacion">
-                    <p>  Tu opción:   Ryzen 5 4500</p>
-                    <ul>
-                        <li>6 núcleos / 12 hilos</li>
-                        <li>Arquitectura Zen 2</li>
-                        <li>Ideal para jugar y transmitir simultáneamente</li>
-                    </ul>
-                </div>
-            </div>    
-        </div>
-
-        <div class="bloque-iteme">
-            <div class="titulo-iteme">Placa Madre</div>
-            <div class="fila-comparacion">
-                <div class="columna-comparacion">
-                    <p> INSUMAX:   MSI A520M-A PRO OEM</p>
-                    <ul>
-                        <li>Versión OEM básica</li>
-                        <li>Menor soporte de BIOS</li>
-                    </ul>
-                </div>
-                <div class="columna-comparacion">
-                    <p> Tu opción:   Asus Prime A520M-K/CSM</p>
-                    <ul>
-                        <li>Versión comercial con soporte CSM</li>
-                        <li>Mayor confiabilidad y actualizaciones</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="bloque-iteme">
-        <div class="titulo-iteme">Memoria RAM</div>
-        <p>Ambas configuraciones incluyen Kingston DDR4 16GB 3200MHz, suficiente para Minecraft con shaders y streaming fluido.</p>
-        </div>
-
-        <div class="bloque-iteme">
-            <div class="titulo-iteme">Almacenamiento</div>
-            <div class="fila-comparacion">
-                <div class="columna-comparacion">
-                    <p> INSUMAX:   SSD 256GB NVMe Hiksemi</p>
-                    <ul>
-                        <li>Menor capacidad</li>
-                        <li>Marca menos reconocida</li>
-                    </ul>
-                </div>
-                <div class="columna-comparacion">
-                    <p> Tu opción:   SSD 500GB NVMe WD Green SN350</p>
-                    <ul>
-                        <li>Mayor espacio para grabaciones y mods</li>
-                        <li>Marca confiable y buen rendimiento</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="bloque-iteme">
-            <div class="titulo-iteme">Placa de Video (GPU)</div>
-            <div class="fila-comparacion">
-                <div class="columna-comparacion">
-                    <p> INSUMAX:   GTX 1630 4GB</p>
-                    <ul>
-                        <li>Sin Ray Tracing</li>
-                        <li>Limitada para shaders exigentes</li>
-                    </ul>
-                </div>
-                <div class="columna-comparacion">
-                    <p> Tu opción:   RTX 3050 6GB</p>
-                    <ul>
-                        <li>Ray Tracing y DLSS</li>
-                        <li>Más de 60 FPS con shaders en 1080p</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="bloque-iteme">
-            <div class="titulo-iteme">Fuente</div>
-            <div class="fila-comparacion">
-                <div class="columna-comparacion">
-                    <p> INSUMAX:   Sentey 600W (genérica)</p>
-                    <ul>
-                        <li>Sin certificación</li>
-                        <li>Riesgo de inestabilidad</li>
-                    </ul>
-                </div>
-                <div class="columna-comparacion">
-                    <p>  Tu opción:   Aureox 650W Bronze 80+</p>
-                    <ul>
-                        <li>Certificación 80+ Bronze</li>
-                        <li>Mayor eficiencia y protección</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        </div>
-    </div>
-    </article>
-
-    <section>
-        <div class="header">
-          <h1 class="header">Capturas e Interacciones con Copilot</h1>
-        <br>
-        </div>
-    <hr>
-    <div>
-        <article class="container">
-            <div class="content">
-                <h2>1 - Capturas de interaccion con IA</h2>
-                <p>Le pregunte a Copilot "¿Qué procesador es mejor para streamear Minecraft con shaders y mantener más de 60 FPS?"</p>
-                <img src="Imagenes/CapturasIA/1er_Prompt.png">
-                <p>Reflexion:
-                    Al haber experimentado Minecraft con Shaders con un Ryzen 5 1600 Af, entiendo como la copilot llego 
-                    a esa conclusion y estoy de acuerdo, puesto que el renderizado de chunks era un poco bajo y no se podia
-                    jugar minecraft en simultaneo con un reproductor de musica o el chrome para reproducir Youtube, la calidad
-                    de los FPS disminuia entre 30 y 40 que no es muy comodo para un usuario o espectador, por eso entiendo que
-                    haya hecho esa recomendacion, en complemento con una buena grafica el streaming a 120FPS y 1080 no deberia 
-                    ser un obstaculo.
+         <hr>
+        <section class="item" label="Imagenes del juego">
+            <div>
+                <img class="minecraft_img" src="imagenes/Launcher.png" title="Launcher oficial de minecraft">
+                <p>Este es el Launcher principal del juego, siendo el "oficial" distribuido por Mojang, habiendo tambien muchos más de manera "pirata".</p>
+                <img class="minecraft_img" src="imagenes/Pantalla_de_inicio.png" title="Pantalla de inicio de minecraft">
+                <p>
+                    Aqui se puede ver en la pantalla de inicio del juego.
+                    Se puede jugar de manera "singleplayer" para jugar solo.
+                    "Multiplayer" para poder juegar con amigos en servidores de terceros o de manera "LAN". 
+                    La siguiente opcion es "Minecraft Realms", que son servidores de pago oficiales proporcionados por Mojang.
+                    Los siguientes botones son, para cambiar el idioma del juego, las opciones generales del juego y el boton para salir del juego.
                 </p>
             </div>
-        </article>
+            <br>
+            <article class="item">
+                <h1>Algunas imagenes del juego</h1>
+                <img class="minecraft_img" src="imagenes/aldea3.png" title="Una aldea">
+                <img class="minecraft_img" src="imagenes/aldea4.png" title="Otro aldea">
+                <img class="minecraft_img" src="imagenes/refugio.png" title="Un refugio">
+                <img class="minecraft_img" src="imagenes/refugioDentro.png" title="Un refugio por dentro">
+                <img class="minecraft_img" src="imagenes/refugioDentro2.png" title="Un refugio por dentro">
+                <img class="minecraft_img" src="imagenes/interfazDeCrafteo.png" title="Interfaz de la mesa de crafteo">
+                <img class="minecraft_img" src="imagenes/portalNether.png" title="Portal al nether">
+                <img class="minecraft_img" src="imagenes/nether.png" title="Algun lugar del nether">
+                <img class="minecraft_img" src="imagenes/portalEnd.png" title="Portal al end">
+                <img class="minecraft_img" src="imagenes/endEntrada.png" title="Entrada del end">
+                <img class="minecraft_img" src="imagenes/dragon2.png" title="Pelea final">
+                <img class="minecraft_img" src="imagenes/portalEndVuelta.png" title="Volviendo del end">
+                <img class="minecraft_img" src="imagenes/inventarioCreativo.png" title="El inventario del modo creativo">
+            </article>
+      
 
-        <article class="container">
-                <div class="content">
-                    <h2>2 - Comparacion de Componentes</h2>
-                    <p>Le pedi a Copilot que me compare dos Placas de Video</p>
-                    <p>"Que es mejor? una Placa De Video Asus Geforce RTX 3050 o una VGA MSI GEFORCE GTX 1630 4GB/GDDR6/DUAL FAN/VENTUS"</p>
-                    <img alt="Verificacion de fuentes I" src="Imagenes/CapturasIA/2do_Prompt_I.png">
-                    <p>La tabla comparativa generada por la IA</p>
-                    <img  alt="verificacion de fuente II" src="Imagenes/CapturasIA/2do_Prompt_II.png">
-                    <p>La fuente que valida los datos obtenidos</p>
-                    <p>En mi caso, elegi la primera ya que sus caracteristicas son mejores, es mas actual y 
-                        esta a la venta en casi cualquier sitio web ademas, si fuera a jugar yo sola o con amigos, 
-                        sin transmitir tener acciones en simultaneo sin duda elegiria la mas viejita por su bajo costo.
-                    </p>
-                </div>
- 
+      </section>
+      <section class="item" label="Requerimientos para Jugar y Stremear minecraft">
+        <article>
+            <h2>Requerimientos mínimos</h2>
+            <p>Información sobre hardware y software para ejecutar Minecraft en PC.</p>
+            <h3>Componentes y especificaciones</h3>
+            <ul>
+                <li><strong>Sistema operativo:</strong> Windows 7 (64-bit) o posterior; macOS Mojave (10.14.5) o superior; Linux moderno de 64-bit</li>
+                <li><strong>Procesador (CPU):</strong> Intel Core i3-3210 o AMD A8-7600</li>
+                <li><strong>Memoria RAM:</strong> 4 GB</li>
+                <li><strong>Tarjeta gráfica (GPU):</strong> Intel HD Graphics 4000 / AMD Radeon R5 o dedicada modesta (GeForce 400 series / Radeon HD 7000) con soporte OpenGL 4.4</li>
+                <li><strong>Almacenamiento:</strong> Al menos 1 GB libre en HDD</li>
+                <li><strong>Resolución:</strong> 1024×768 o superior</li>
+            </ul>
         </article>
-
-        <article class="container">
-            <div class="content">
-            <h2>3 - Explicación técnica traducida</h2> 
-            <p>Le pedi a la Copilot que me explicara el significado de las siglas GTX y RTX</p>
-                    <div class="content">
-                        <h2>Explicación de la IA</h2>
-                    <p>GTX es una línea de placas de video de NVIDIA pensada para juegos con buen rendimiento, pero sin tecnologías avanzadas como Ray Tracing o inteligencia artificial.</p>
+        <article>
+            <h2>Requerimientos recomendados</h2>
+            <h3>Componentes y especificaciones</h3>
+            <ol>
+                <li><strong>Sistema operativo:</strong> Windows 10/11 (64-bit); versiones recientes de macOS / Linux</li>
+                <li><strong>Procesador (CPU):</strong> Intel Core i5-4690 o equivalente AMD</li>
+                <li><strong>Memoria RAM:</strong> 8 GB</li>
+                <li><strong>Tarjeta gráfica (GPU):</strong> GeForce 700 series / Radeon R7 / RX 200 series con soporte OpenGL 4.5</li>
+                <li><strong>Almacenamiento:</strong> 4 GB o más, preferiblemente en SSD</li>
+                <li><strong>Resolución:</strong> 1920×1080 (FULL HD)</li>
+            </ol>
+        </article>
+    </section>
+       <section class="item" label="Comparaciones">
+        <h2>Comparaciones descripitivas</h2>
+            <article>
+                <p>
+                    Decidimos realizar la comparación técnica con otros juegos, basándonos en su popularidad,
+                    y nuestro conocimiento de cada juego,
+                    si bien son juegos diferentes, creímos en la posibilidad de generalizar nuestra computadora,
+                    para correr distinta variedad de juegos, ya que un streamer debería poder adaptarse a las tendencias.
+                </p>
+            <div>
+                <p>
+                    Por un lado tenemos Phasmophobia: Ofrece un gameplay multijugador de hasta 4 personas, con temática de horror e investigación paranormal.
+                    Dentro del juego se usa el reconocimiento de voz para interactuar con el entorno y fantasmas en el juego.
+                    Su objetivo es identificar fantasmas en distintos mapas predeterminados. Donde se deben llevar a cabo tareas específicas de medición de parámetros paranormales,
+                    usando cámaras, termómetros, linternas y un libro para registrar todo lo sucedido, el juego termina cuando,
+                    ingresas correctamente los datos del fantasma incluyendo las fotos recolectadas y demás.
+                </p>  
+            </div>
+            <div>
+                <p>
+                    Por otro lado tenemos el Counter-Strike 2, clasificado como un shooter en primera persona.
+                    Tiene 3 modos de juego, en el cual van a existir siempre 2 bandos, los terroristas y los antiterroristas.
+                    La primera modalidad y más conocida es sobre colocar una bomba, la tarea de los terroristas será colocar la bomba en la base antiterrorista,
+                    defendiendola para que no sea desactivada hasta que explote y los antiterroristas deben desactivarla antes de que detone.
+                    La modalidad más común es en la que un solo bando queda en pie, ganan los que hayan eliminado por completo al enemigo.
+                    En la última modalidad se incluyen rehenes, los cuales se encuentran en la base terrorista quienes deben asegurarse de que no sean rescatados,
+                    mientras que los antiterroristas tienen que llevar todos los rehenes a salvo a su base.
+                </p>
+            </div>
+            </article>
+       </section>
+       <section class="item" label="Requisitos de hardware y software para stremear">
+            <article>
+                <div>
+                    <p>Ambos juegos tienen gráficos elevados, aunque no se comparen con minecraft base, se pueden comparar si a minecraft le incluimos shaders(sombras).
+                        Para poder armar una computadora que corra estos 3 juegos teniendo un streaming fluido se necesitan estos mínimos requisitos de hardware.</p><h4>Requisitos minimos</h4>
                     <ul>
-                        <li>Buena para juegos en 1080p sin efectos avanzados.</li>
-                        <li>No tiene soporte para Ray Tracing ni DLSS.</li>
-                        <li>Más económica y de gama media o entrada.</li>
+                        <h2 class="subtitle">Hardware</h2>
+                            <li>Procesador de 6 núcleos y 12 hilos de socket AM4, como recomendado un: AMD Ryzen 5 5600G.</li>
+                            <li>Ram de 16gb si es posible una DDR4, o dos de 8gb.</li>
+                            <li>Disco o unidad de estado sólido (SSD) de 512gb.</li>
+                            <li>Fuente de 650W.</li>
+                            <li>GPU o tarjeta gráfica GTX 1650 de 4gb.</li>
+                            <li>Motherboard (Placamadre) con un chipset B450, de tipo Mini ATX, compatible con procesador AM4.</li>
+                        <h2 class="subtitle">Software</h2>
+                            <li>Windows 10 64bit</li>
+                            <li>Steam o EpicGames para comprar los juegos</li>
+                            <li>Java el paquete de JDK</li>
+                            <li>OBS studio</li>
+                            <li>Navegador: Chrome, Edge o OperaGX </li>
                     </ul>
-                    </div>
-       
-                    <div class="content">
-                    <p>RTX es una línea más moderna y potente de NVIDIA. Incluye tecnologías como Ray Tracing (luces y sombras realistas) y DLSS (mejora de rendimiento con IA).</p>
-                    <ul>
-                        <li>Ideal para juegos exigentes y streaming.</li>
-                        <li>Incluye núcleos especiales para Ray Tracing y DLSS.</li>
-                        <li>Mejor rendimiento en gráficos y multitarea.</li>
-                    </ul>
-                    </div>
-                    <div class="content">
-                        <h2>Explicacion Traducida</h2>
-                        <p>GTX de las siglas en ingles (Giga Texel shader eXtreme), es una denominación
-                          de la empresa NVIDIA para nombrar a ciertos modelos de Placas de video, indicando
-                          su tipo de tecnologia. Las GTX son modelos mas viejos de calidad intermedia que 
-                          trabaja con graficos tradicionales y es de las mas buscadas por su bajo costo.</p>
-                        <p>La RTX de las siglas Ray Tracing texel eXtreme es la evolución de las GTX
-                          con técnologia mas avanzada en renderizado gráfico, pudiendo simular el comportamiento
-                          de la luz en un entorno 3D lo cual genera efectos visuales mas naturales y detallados.
-                        </p>
-                    </div>
-        </article>
-        <article class="container">
-                <div class="content">
-                    <h2>4 - Imagen generada con IA</h2>
-                    <p>Le pedi a Copilot que me generara una imagen de una chica stremeando minecraft con estas especificaciones:
-                      Generar una imagen de una chica en un dormitorio,
-                      jugando en un setup gamer a minecraft con shaders, que tenga posters de anime, 
-                      que este stremeando la partida, la chica debe vestir ropa de abrigo olgada y verse de espalas,
-                      tiene que destacarse la computadora y debe verse el juego, con luces tenues
-                      y la decoracion dada por una gama de azules y blancos
-                    </p>
-                      <img alt="Chica jugando Minecraft con Setup Gamer" src="Imagenes/CapturasIA/2da_Imagen_Generada_por_IA.png" title="Yo en un futuro">
-                    <p>La idea de esta imagen era plantear que las chicas
-                      tambien jugamos videojuegos y que no solo los chicos pueden aislarse a jugar en su mundo,
-                      habemos un porcentaje de la poblacion femenina que prefiere quedarse en casa a jugar con amigos.
-                    </p>
-                   
                 </div>
-        </article>
+            </article>
+        </section>
 
-        <article class="container">
-                <div class="content">
-                    <h2>5 - Conclusiones</h2>
-                    <p>
-                      En este trabajo la implementación de la inteligencia artificial fue una herramienta
-                      muy importante y muy útil, ya que investigar en foros o en sitios lleva mucho más tiempo. en cambio
-                      la IA puede investigar y codificar con más rapidez y casi sin errores. Es entretenido hacer el 
-                      ejercicio de pedir información u otros recursos, debiendo especificar lo que necesitas, aprendí más
-                      que de las veces que tuve que sentarme a investigar por mi cuenta sobre un tema en específico.
-                    </p>
-                    <p>Los errores que hubo resultaron ser en el precio de un UPS con determinadas características,
-                      que en las paginas web tenian una variación en el precio y no habia stock o ese articulo ya no estaba a la venta
-                      entonces ahí tuve que recurrir a buscar manualmente.
-                    </p>
-                    <p>
-                      Personalmente busco información manualmente cuando no se lo que estoy buscando o no se como preguntar
-                      que necesito, como en casos en donde recordas solo una palabra de un titulo de una serie o pelicula y vas probando
-                      hasta que encontras lo que queres, o cuando ves a un actor en una serie y queres saber el nombre pero no sabes como se
-                      llama nada que tenga que ver con él pero si sabes quíen que sí conoces aparece.
-                    </p>
+        <hr>
+            <h1>Presupuestos de los Integrantes</h1>
+            <section>
+                <div class="items">
+                    <article class="PC">
+                        <h2 class="header">Compontentes de la pc</h2>
+                        <p>
+                            Procesador: elegí el Ryzen 5 4500 de 6 núcleos / 12 hilos.
+                            Ya que es ideal para jugar y transmitir simultáneamente. 
+                            Su precio es de $120.382.
+                            Descartando el Ryzen 3 de 3200G porque es limitado para multitarea y streaming.
+                            Referencia:
+                        </p>   <a href="https://bestinformatica.com.ar/itemes-de-pc/procesadores/procesador-amd-am4-ryzen-5-4500-65w-325273.html">Best Informática</a>
+                        <p>
+                            Placa Madre: elegí la Motherboard Asus Prime A520m-k/csm con formato mATX,
+                            con zócalo para AM4 que Soporta hasta Ryzen 5000.
+                            Ya que es más confiable y óptima para futuras actualizaciones,
+                            además de ser más popular en el mercado. Su precio es de $101.005
+                            Descarte la Motherboard MSI A520M-A PRO OEM por ser una versión más básica y limitada.
+                            Referencia:
+                        </p><a href="https://bestinformatica.com.ar/itemes-de-pc/motherboards/mother-asus-am4-prime-a520m-k-csm-342116.html">Best Informática</a>
+                        <p>
+                            Memoria RAM DDR4 16GB 3200MHz me quede con esta elección ya que es suficiente para Minecraft con shaders y streaming fluido,
+                            además son más fáciles de conseguir y reemplazar en caso de que se llegue a averiar. Su precio es de $93.420
+                            Referencia:
+                        </p><a href="L0005-2 presupuesto INSUMAX.pdf">INSUMAX</a>
+                        <p>
+                            Almacenamiento mi elección fué el SSD de 500GB NVMe WD Green SN350
+                            ya que tiene más espacio para guardar grabaciones o incluir mods. 
+                            Además de ser una marca confiable y reconocida. Su precio es de  $62.401
+                            Descarte la que me recomendó insumax el SSD de 256GB NVMe Hik Semi por menor capacidad de almacenamiento.
+                            Referencia:
+                        </p><a href="https://bestinformatica.com.ar/itemes-de-pc/unidades-solidas-ssd/disco-ssd-m.2-500gb-wd-green-sn350-nvme-326931.html">Best Informática</a>
+                        <p>
+                            Placa de Video (GPU): opté por la RTX 3050 Nvidia de 6GB porque tiene más capacidad gráfica
+                            y un rendimiento testeado de más de 60 FPS con shaders transmitiendo a 1080p. 
+                            Esta placa incorpora tecnología de Ray Tracing y DLSS.  Su precio es de $338.461
+                            Descarte la GTX 1630 de  4GB porque es más limitada a la hora de correr minecraft con shaders,
+                            además hay muchos sitios donde no está disponible.
+                            Referencia:
+                        </p><a href="https://www.armytech.com.ar/placas-de-video/5127-placa-de-video-asus-geforce-rtx-3050-dual-oc-6gb.html">Armytech</a>
+                        <p>
+                            Fuente: con esta elección preferí la seguridad de tener un componente certificado,
+                            elegí la Aureox de 650W Bronze 80+Certificación, es mucho más eficiente y brinda mayor
+                            protección que la Sentey 600W (genérica). El precio de la Aureox es de $87.411
+                            Referencia:
+                        </p><a href="https://bestinformatica.com.ar/itemes-de-pc/fuentes/fuente-gamer-aureox-650w-bronze-80+psu-325421.html">Best Informática</a>
+                        <p>
+                            Gabinete incluí a mi presupuesto el gabinete Aerocool Mecha RGB Vidrio Templado con formato para Mini-ITX / MicroATX / ATX,
+                            de tamaño medio y su precio es de $35.205. Éste lo elegí por sutiene buen flujo de aire y tamaño,
+                            es compatible con mi placa y es mas accesible que muchos otros gabinetes.Su precio es de $34.105
+                            Referencia:
+                        </p><a href="https://www.armytech.com.ar/gabinetes-sin-psu/407-gabinete-gamer-aerocool-mecha-argb-vidrio-g-bk-v2.html">Armytech</a>
+                    </article>
                 </div>
+            </section>
+            <section>
+                <div class="items">
+                    <article class="Perifericos">
+                        <h2 class="header">Perifericos</h2>
+                        <p>
+                            Teclado + Mouse: elegí el combo Genius Slimstar C126 Combo USB,
+                            ya que es económico y funcional para un streamer que recién empieza.
+                            Su precio es de $18.124
+                            Referencia:
+                        </p><a href="https://bestinformatica.com.ar/perifericos/teclados/genius-slimstar-c126-combo-teclado-y-mouse-black-325458.html">Best Informática</a>
+                        <p>
+                            Monitor: elegí el Monitor LED VA Solarmax 236 SX24F2 75hz FHD HDMI + VGA con resolución de 1920x1080
+                            ya que es ideal para jugar y stremear en Full HD sin gastar demasiado. Su precio es de $137.056,69
+                            Referencia:
+                        </p><a href="https://www.maximus.com.ar/Producto/Monitor-LED-VA-Solarmax-236-SX24F2-75hz-FHD-HDMI--VGA/ITEM=15549/maximus.aspx">Maximus Gaming Hardware</a>
+                        <p>
+                            Microfono: elegí el Trust Mantis GXT232 con cable USB, ya que es económico y ofrece buena calidad de sonido.
+                            Su precio es de $42.710,40
+                            Referencia:
+                        </p><a href="https://fullh4rd.com.ar/prod/17904/microfono-trust-mantis-gxt232">fullh4rd</a>
+                        <p>Auriculares: elegí los Trust Carus GXT492 Multiplataforma Black, ya que son comodos y de buena calidad.
+                            Su precio es de $59.067
+                        </p><a href="https://bestinformatica.com.ar/perifericos/parlantes-y-auriculares/auricular-trust-carus-multiplataforma-black-gxt492-377390.html">Best Informática</a>
+                        <p>Estabilizador: elegí el Lyonn TCA-1200N-V, ya que ofrece protección básica para el equipo contra subidas de tensión
+                            y cortes de energía. Ademas tiene UPS integrado para mantener la pc encendida unos minutos en caso de corte eléctrico.
+                            Su precio es de $58.072
+                        </p><a href="https://bestinformatica.com.ar/energia/upss/lyonn-estabilizador-elect.-tca-1200n-v-341885.html">Best Informática</a>
+                        <div class="totales">
+                            <p>Total Hardware Principal: $838.285</p>
+                            <p>Total Periféricos: $315.030,09</p>
+                            <p>Total General: $1.153.315,09</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+                <hr>
+            <footer label="iteracciones con IA">
+                <h1>Capturas e Interacciones con Copilot</h1>
+                    <br>
+                <div>
+                    <article class="container">
+                        <div class="content">
+                            <h2>1 - Capturas de interaccion con IA</h2>
+                            <p>Le pregunte a Copilot "¿Qué procesador es mejor para streamear Minecraft con shaders y mantener más de 60 FPS?"</p>
+                            <img src="Imagenes/CapturasIA/1er_Prompt.png">
+                            <p>Reflexion:
+                                Al haber experimentado Minecraft con Shaders con un Ryzen 5 1600 Af, entiendo como la copilot llego 
+                                a esa conclusion y estoy de acuerdo, puesto que el renderizado de chunks era un poco bajo y no se podia
+                                jugar minecraft en simultaneo con un reproductor de musica o el chrome para reproducir Youtube, la calidad
+                                de los FPS disminuia entre 30 y 40 que no es muy comodo para un usuario o espectador, por eso entiendo que
+                                haya hecho esa recomendacion, en complemento con una buena grafica el streaming a 120FPS y 1080 no deberia 
+                                ser un obstaculo.
+                            </p>
+                        </div>
+                    </article>
 
-        </article>
-</section>
-    
+                    <article class="container">
+                            <div class="content">
+                                <h2>2 - Comparacion de Componentes</h2>
+                                <p>Le pedi a Copilot que me compare dos Placas de Video</p>
+                                <p>"Que es mejor? una Placa De Video Asus Geforce RTX 3050 o una VGA MSI GEFORCE GTX 1630 4GB/GDDR6/DUAL FAN/VENTUS"</p>
+                                <img alt="Verificacion de fuentes I" src="Imagenes/CapturasIA/2do_Prompt_I.png">
+                                <p>La tabla comparativa generada por la IA</p>
+                                <img  alt="verificacion de fuente II" src="Imagenes/CapturasIA/2do_Prompt_II.png">
+                                <p>La fuente que valida los datos obtenidos</p>
+                                <p>En mi caso, elegi la primera ya que sus caracteristicas son mejores, es mas actual y 
+                                    esta a la venta en casi cualquier sitio web ademas, si fuera a jugar yo sola o con amigos, 
+                                    sin transmitir tener acciones en simultaneo sin duda elegiria la mas viejita por su bajo costo.
+                                </p>
+                            </div>
+            
+                    </article>
 
+                    <article class="container">
+                        <div class="content">
+                        <h2>3 - Explicación técnica traducida</h2> 
+                        <p>Le pedi a la Copilot que me explicara el significado de las siglas GTX y RTX</p>
+                                <div class="content">
+                                    <h2>Explicación de la IA</h2>
+                                <p>GTX es una línea de placas de video de NVIDIA pensada para juegos con buen rendimiento, pero sin tecnologías avanzadas como Ray Tracing o inteligencia artificial.</p>
+                                <ul>
+                                    <li>Buena para juegos en 1080p sin efectos avanzados.</li>
+                                    <li>No tiene soporte para Ray Tracing ni DLSS.</li>
+                                    <li>Más económica y de gama media o entrada.</li>
+                                </ul>
+                                </div>
+                
+                                <div class="content">
+                                <p>RTX es una línea más moderna y potente de NVIDIA. Incluye tecnologías como Ray Tracing (luces y sombras realistas) y DLSS (mejora de rendimiento con IA).</p>
+                                <ul>
+                                    <li>Ideal para juegos exigentes y streaming.</li>
+                                    <li>Incluye núcleos especiales para Ray Tracing y DLSS.</li>
+                                    <li>Mejor rendimiento en gráficos y multitarea.</li>
+                                </ul>
+                                </div>
+                                <div class="content">
+                                    <h2>Explicacion Traducida</h2>
+                                    <p>GTX de las siglas en ingles (Giga Texel shader eXtreme), es una denominación
+                                    de la empresa NVIDIA para nombrar a ciertos modelos de Placas de video, indicando
+                                    su tipo de tecnologia. Las GTX son modelos mas viejos de calidad intermedia que 
+                                    trabaja con graficos tradicionales y es de las mas buscadas por su bajo costo.</p>
+                                    <p>La RTX de las siglas Ray Tracing texel eXtreme es la evolución de las GTX
+                                    con técnologia mas avanzada en renderizado gráfico, pudiendo simular el comportamiento
+                                    de la luz en un entorno 3D lo cual genera efectos visuales mas naturales y detallados.
+                                    </p>
+                                </div>
+                    </article>
+                    <article class="container">
+                            <div class="content">
+                                <h2>4 - Imagen generada con IA</h2>
+                                <p>Le pedi a Copilot que me generara una imagen de una chica stremeando minecraft con estas especificaciones:
+                                Generar una imagen de una chica en un dormitorio,
+                                jugando en un setup gamer a minecraft con shaders, que tenga posters de anime, 
+                                que este stremeando la partida, la chica debe vestir ropa de abrigo olgada y verse de espalas,
+                                tiene que destacarse la computadora y debe verse el juego, con luces tenues
+                                y la decoracion dada por una gama de azules y blancos
+                                </p>
+                                <img alt="Chica jugando Minecraft con Setup Gamer" src="Imagenes/CapturasIA/2da_Imagen_Generada_por_IA.png" title="Yo en un futuro">
+                                <p>La idea de esta imagen era plantear que las chicas
+                                tambien jugamos videojuegos y que no solo los chicos pueden aislarse a jugar en su mundo,
+                                habemos un porcentaje de la poblacion femenina que prefiere quedarse en casa a jugar con amigos.
+                                </p>
+                            
+                            </div>
+                    </article>
+                    <article class="container">
+                            <div class="content">
+                                <h2>5 - Conclusiones</h2>
+                                <p>
+                                En este trabajo la implementación de la inteligencia artificial fue una herramienta
+                                muy importante y muy útil, ya que investigar en foros o en sitios lleva mucho más tiempo. en cambio
+                                la IA puede investigar y codificar con más rapidez y casi sin errores. Es entretenido hacer el 
+                                ejercicio de pedir información u otros recursos, debiendo especificar lo que necesitas, aprendí más
+                                que de las veces que tuve que sentarme a investigar por mi cuenta sobre un tema en específico.
+                                </p>
+                                <p>Los errores que hubo resultaron ser en el precio de un UPS con determinadas características,
+                                que en las paginas web tenian una variación en el precio y no habia stock o ese articulo ya no estaba a la venta
+                                entonces ahí tuve que recurrir a buscar manualmente.
+                                </p>
+                                <p>
+                                Personalmente busco información manualmente cuando no se lo que estoy buscando o no se como preguntar
+                                que necesito, como en casos en donde recordas solo una palabra de un titulo de una serie o pelicula y vas probando
+                                hasta que encontras lo que queres, o cuando ves a un actor en una serie y queres saber el nombre pero no sabes como se
+                                llama nada que tenga que ver con él pero si sabes quíen que sí conoces aparece.
+                                </p>
+                            </div>
 
-</section>
+                    </article>
+                
+            </footer>
+    </body>
+          
+ </html>
+
+   
 
