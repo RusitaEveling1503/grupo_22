@@ -1,0 +1,479 @@
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trabajo Práctico de Fundamentos de la Computación</title>
+  <style>
+   body {
+                font-family: 'Segoe UI', sans-serif;
+                background-color: #f5f5f5;
+                color: #333;
+                padding: 20px;
+            }
+            header{
+                margin-bottom: 150px;
+                border-bottom-color: darkslategray;
+                border-bottom-style: solid;
+                border-bottom-width: 2px;
+                padding-bottom: 60px;
+            }
+            h1 {
+                text-align: center;
+                font-size: 2.2em;
+                color: #2c3e50;
+                margin-bottom: 30px;
+            }
+            .items {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+            }
+            section, footer{
+                font-family: Arial, Helvetica, sans-serif;
+                line-height:1.25;
+                text-align: justify;
+                margin-bottom: 50px;
+            }
+            article {
+                background-color: #ffffff;
+                border-radius: 8px;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+                padding: 20px;
+            }
+            .header {
+                font-size: 1.6em;
+                color: #2980b9;
+                margin-bottom: 15px;
+                border-bottom: 2px solid #2980b9;
+                padding-bottom: 5px;
+            }
+            article p {
+                line-height: 1.6;
+                margin-bottom: 12px;
+            }
+            article a {
+                display: inline-block;
+                margin-bottom: 15px;
+                color: #27ae60;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            article a:hover {
+                text-decoration: underline;
+            }
+
+            .totales {
+                background-color: #ecf0f1;
+                border-top: 2px solid #bdc3c7;
+                padding: 15px;
+                margin-top: 20px;
+                font-weight: bold;
+                font-size: 1.1em;
+                color: #2c3e50;
+            }
+            li{
+                list-style:none;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            p{
+                font-family: Arial, Helvetica, sans-serif;
+                line-height:1.25;
+                text-align: justify;
+             }
+            .minecraft_img{
+                alt: "Aquí había una imagen";
+                width: 600px;
+                height: 350px;
+            }
+            .caratula{
+                font-size: 20px;
+                font-weight: normal;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            .caratula_li{
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-left: 370px;
+            }
+            .h1_header{
+                font-size: 30px;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+            .title_component{
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+  </style>
+  
+   <header label="Caratula">
+            <h1>Universidad Autónoma de Entre Ríos</h1>
+            <h2>Facultad de Ciencia y Tecnología</h2>
+
+            <h2>Carrera: Licenciatura en Sistemas de Información</h2>
+            <h2>Cátedra: Fundamentos de Computación</h2>
+            <h2>Trabajo Práctico: “Streaming de videojuegos”</h2>
+
+            <h2>Profesores:</h2>
+            <ul>
+                <li>Bioing. Ismael Cassi</li>
+                <li>Lic. Paolo Orundés Cardinali (JTP)</li>
+            </ul>
+
+            <h2>Integrantes del Grupo:</h2>
+            <ul>
+                <li>Andrian, Evangelina Luján</li>
+                <li>Arrúa, Nahuel</li>
+                <li>Castrogiovanni, Marcos Daniel</li>
+                <li>Larrea, Iris Anahí</li>
+                <li>Otero, Ulises Fernando</li>
+            </ul>
+
+            <h2>Comisión: 3</h2>
+            <h2>Fecha de Entrega: Semana del 27 a 31</h2>
+            <h2>Año Lectivo: 2025</h2>
+        
+        </header>
+</head>
+<body>
+ <article label="Introduccion">
+  <h2>Presupuesto de la PC</h2>
+
+    <div class="grid">
+  <h3>Componentes del equipo</h3>
+  <h3>Listado y precios estimados</h3>
+  <ol>
+    <li>Procesador: Intel Core i5-10400F 4.3GHz (s.1200) — $193.300</li>
+    <li>Motherboard: ASRock B560M-HDV R3.0 (s.1200) — $114.900</li>
+    <li>Memoria RAM: Kingston Fury Beast RGB 16GB (2×8) DDR4-3200 — $129.500</li>
+    <li>GPU: Gigabyte GeForce RTX 3050 WINDFORCE V2 OC 6GB — $348.900</li>
+    <li>SSD: Kingston NV3 1TB M.2 NVMe PCIe 4.0 — $105.900</li>
+    <li>Fuente: Gigabyte P550SS 550W 80 Plus Silver — $73.800</li>
+    <li>Gabinete: Thermaltake S100 Black Tempered Glass — $66.200</li>
+    <li>Monitor: Solarmax 19" SX19F2 HD HDMI / VGA — $78.800</li>
+    <li>Combo Teclado + Mouse: Logitech MK220 inalámbrico — $30.100</li>
+    <li>Auriculares: Fury Warhawk RGB Black-Blue — $13.900</li>
+    <li>Windows 11 (licencia — ejemplo local): $14.751</li>
+  </ol>
+  <p>Total estimado: $1.324.251</p>
+        <h3 style="margin-top:0">Documento / Presupuesto</h3>
+        <p class="small">Imagen adjunta del presupuesto original (uso referencial).</p>
+        <img src="/mnt/data/presupuesto-maximus_page-0001.jpg" alt="Presupuesto Maximus" />
+        <div style="margin-top:12px" class="row">
+          <a class="btn" href="#">Imprimir</a>
+        </div>
+</article>
+
+<hr>
+
+  </div>
+  
+  <article>
+  <section class="component-justification">
+  <h2>Justificación de cada componente seleccionado</h2>
+
+  <h3>Procesador: Intel Core i5-10400F (4.3 GHz, 6 núcleos / 12 hilos)</h3>
+  <p>Tiene una muy buena relación con respecto al precio-rendimiento. Su arquitectura Comet Lake ofrece potencia suficiente para juegos modernos y streaming fluido. No se calienta demasiado y funciona bien con el cooler de fábrica.</p>
+
+  <h3>Motherboard: ASRock B560M-HDV R3.0 (Socket 1200)</h3>
+  <p>Es sólida y confiable. Permite aprovechar toda la velocidad del procesador y memorias DDR4 de hasta 3200 MHz. Dispone de ranura M.2 NVMe, puertos USB 3.2 y un diseño compacto ideal para gabinetes medianos.</p>
+
+  <h3>Memoria RAM: Kingston Fury Beast RGB 16GB 3200 MHz DDR4</h3>
+  <p>Gran capacidad y velocidad, ideal para multitarea, edición y juegos exigentes. Su iluminación RGB agrega estética sin comprometer el rendimiento. Ofrece estabilidad y compatibilidad con las placas Intel.</p>
+
+  <h3>Tarjeta Gráfica: Gigabyte RTX 3050 WINDFORCE V2 OC 6GB GDDR6</h3>
+  <p>Es ideal para gaming en 1080p y streaming. Su doble ventilador WINDFORCE mantiene bajas temperaturas, y el codificador NVENC de NVIDIA permite transmitir sin afectar los FPS.</p>
+
+  <h3>Almacenamiento: SSD Kingston NV3 1TB M.2 NVMe PCIe 4.0</h3>
+  <p>Tiene velocidades de lectura/escritura muy superiores a los SSD SATA, ideal para tiempos de carga mínimos, además de que se encuentra a un buen precio.</p>
+
+  <h3>Fuente: Gigabyte P550SS 550W 80 Plus Silver ATX 3.0</h3>
+  <p>Esta fuente es moderna y, sobre todo, eficiente con una certificación 80 Plus Silver. Su potencia cubre sobradamente esta configuración y deja margen para ampliaciones a futuro. Tiene un precio justificado.</p>
+
+  <h3>Gabinete: Thermaltake S100 Black Tempered Glass</h3>
+  <p>Un diseño elegante con vidrio templado, posee una excelente gestión del flujo de aire y espacio interno optimizado para montaje limpio. Es, ante todo, un gabinete estéticamente bueno.</p>
+
+  <h3>Monitor: Solarmax 19" SX19F2 HD HDMI/VGA</h3>
+  <p>Muy económico y funcional. Su conexión HDMI lo hace compatible con GPUs modernas y ofrece buena calidad de imagen para tareas cotidianas o streaming en 720p.</p>
+
+  <h3>Periféricos: Combo Logitech MK220 Inalámbrico</h3>
+  <p>Confiable y con gran duración de batería. Es ideal para escritorios cuidados que no tengan cables molestos rondando por ahí.</p>
+
+  <h3>Auriculares: Fury Warhawk RGB Black-Blue</h3>
+  <p>Tiene un diseño atractivo con iluminación RGB y un sonido decente para juegos. Buena relación precio-calidad para jugar partidas largas.</p>
+</section>
+</article>
+
+<hr>
+
+<article>
+<section class="component-comparison">
+  <h2>Comparación entre algunos componentes y sus alternativas</h2>
+
+  <h3>Comparación de GPU</h3>
+  <p>Gigabyte RTX 3050 WINDFORCE V2 OC 6GB (mi elección)</p>
+  <ul>
+    <li>Ventajas: codificador NVENC moderno, bajo consumo, buen rendimiento 1080p/720p, relativamente accesible.</li>
+  </ul>
+
+  <p>Alternativa: NVIDIA RTX 2060 / 2060 SUPER 6GB</p>
+  <ul>
+    <li>Ventajas: rendimiento más alto en juegos exigentes, mejor margen para mods/shaders pesados mientras se hacen streams.</li>
+    <li>Desventajas: más consumo, puede requerir fuente de mayor calidad, mayor costo.</li>
+  </ul>
+
+  <p>Ambas tarjetas son compatibles con la fuente de 550W y el resto de la configuración, siempre que la fuente tenga el conector PCIe adecuado.</p>
+
+  <h3>Comparación de RAM</h3>
+  <p>Kingston Fury Beast RGB 16GB DDR4-3200 (2×8GB) (mi elección)</p>
+  <ul>
+    <li>Ventajas: buena velocidad, dual channel, iluminación RGB, excelente para streaming y juegos.</li>
+  </ul>
+
+  <p>Alternativa: Corsair Vengeance LPX 16GB DDR4-3200 (2×8GB)</p>
+  <ul>
+    <li>Ventajas: reputación alta, perfiles XMP confiables, bajo perfil (mejor compatibilidad con disipadores grandes), muy estable.</li>
+    <li>Desventajas: sin RGB, ligeramente más caro en algunos casos.</li>
+  </ul>
+  <h3>Página seleccionada</h3>
+  <p>Enlace: <a href="https://www.maximus.com.ar/" target="_blank">https://www.maximus.com.ar/</a></p>
+  <p>Seleccioné esta página debido a la variedad de procesadores, placas madre y tarjetas gráficas que encontré cuando ingresé, que, de hecho, fueron las búsquedas más complicadas debido al alto precio que están cotizando en páginas más “sofisticadas” en estos días. 
+  <br>Max Tecno es otra página que encontré para investigar sobre los precios de los componentes, no la elegí porque los precios de las placas madre costaban más de lo que encontré en la web Maximus, y eso era una puesta en jaque para el presupuesto que tenemos para formar nuestra computadora.</p>
+</section>
+</article>
+
+<hr>
+
+<article>
+  <h2>Análisis de rendimiento esperado</h2>
+  <p>Con la configuración elegida, la PC tiene una muy buena base para jugar y stremear Minecraft a una calidad de 720p. 
+  El procesador Intel i5-10400F cuenta con seis núcleos y doce hilos, lo que le da suficiente potencia para manejar el juego junto al software de streaming. 
+  Además, la tarjeta gráfica RTX 3050 aporta no solo buen rendimiento en juegos, sino también un codificador de video (NVENC) que permite aliviar la carga del procesador durante las transmisiones en vivo. 
+  Es gracias a eso que la experiencia de streaming se vuelve más fluida y estable.</p>
+
+  <p>En un escenario de Minecraft sin shaders ni mods pesados, se pueden esperar tasas de cuadros muy altas. 
+  El juego se movería entre 200 y 300 FPS sin transmisión, y al activar el stream, la caída es mínima: los valores deberían rondar entre 170 y 220 FPS, más que suficiente para un juego tan ligero.</p>
+
+  <p>Si se usan shaders ligeros o mods de complejidad media, el consumo de recursos aumenta, pero la PC sigue respondiendo bien. 
+  En ese caso, los FPS sin transmisión se ubicarían entre 120 y 180, y al stremear bajarían a unos 100-140 FPS. 
+  La experiencia seguiría siendo estable, especialmente si se ajusta la distancia de renderizado o se reducen ciertos efectos visuales.</p>
+
+  <p>En un escenario más exigente con shaders pesados o distancia de renderizado alta, los FPS caerían más: entre 60 y 100 FPS sin transmitir, y de 50 a 70 FPS al hacerlo. 
+  Aunque el rendimiento baja, sigue siendo suficiente para sostener una transmisión a 720p con 60 FPS, siempre que se optimicen las configuraciones gráficas.</p>
+
+  <p>Conclusión: la PC está capacitada para jugar y transmitir Minecraft a 720p de forma fluida. 
+  Con configuraciones moderadas, incluso podría superar los 100 FPS durante el streaming, y con ajustes más ambiciosos seguiría ofreciendo una buena calidad de juego y transmisión.</p>
+</section>
+</article>
+
+<hr>
+
+<article>
+<section class="ia-interaction">
+  <h2>Capturas de interacción con IA</h2>
+
+  <div class="ia-chat">
+    
+      <img src="00.PNG" alt="Pregunta sobre GPU para streamear Detroit: Become Human" style="max-width: 80%; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.4); margin-bottom: 15px;">
+    
+      <img src="01.PNG" alt="Respuesta de la IA sobre GPU para Detroit: Become Human" style="max-width: 80%; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.4); margin-bottom: 15px;">
+	  
+      <img src="02.PNG" alt="Requisitos gráficos oficiales de Detroit: Become Human" style="max-width: 80%; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.4); margin-bottom: 15px;">
+ 
+      <img src="03.PNG" alt="Captura adicional de interacción con IA" style="max-width: 80%; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.4); margin-bottom: 15px;">
+	  
+  </div>
+</section>
+</article>
+
+<hr>
+
+ <article>
+    <div>
+        <h2>Videojuegos que se pueden jugar teniendo un procesador Intel Core i3, Intel Core i5, Intel Core i7, Intel Core i9</h2>
+    </div>
+<section>
+    
+        <h3>1. Intel Core i3</h3>
+        <ul>
+            <li>Nivel de CPU: Básico / entrada. Generalmente 2-4 núcleos y 4-8 hilos, frecuencia base moderada.</li>
+            <li>Juegos recomendados:
+                <ul>
+                    <li>Juegos ligeros o menos exigentes: Minecraft, Among Us, Stardew Valley, The Sims 4, Fortnite a configuraciones bajas/medias.</li>
+                    <li>Juegos competitivos de eSports: CS:GO, League of Legends, Valorant, Rocket League en settings bajos-medios.</li>
+                </ul>
+            </li>
+            <li>Limitaciones: No es ideal para juegos AAA modernos a alta resolución y alta tasa de cuadros, porque la CPU puede volverse cuello de botella si la GPU es potente.</li>
+        </ul>
+        <h3>2. Intel Core i5</h3>
+        <ul>
+            <li>Nivel de CPU: Medio / mainstream. Normalmente 4-6 núcleos (modelos más recientes hasta 6-10 hilos o más).</li>
+            <li>Juegos recomendados:
+                <ul>
+                    <li>Juegos AAA actuales: Assassin's Creed Valhalla, Cyberpunk 2077, Elden Ring, a configuraciones medias-altas dependiendo de la GPU.</li>
+                    <li>eSports competitivos: Valorant, Fortnite, CS:GO, LOL a altas tasas de FPS.</li>
+                </ul>
+            </li>
+            <li>Ventaja: Buen balance entre rendimiento y precio; puede manejar la mayoría de juegos modernos sin problemas.</li>
+        </ul>
+        <h3>3. Intel Core i7</h3>
+        <ul>
+            <li>Nivel de CPU: Alto / entusiasta. Normalmente 6-8 núcleos o más, con hyperthreading.</li>
+            <li>Juegos recomendados:
+                <ul>
+                    <li>Juegos AAA en alta o ultra resolución (1080p/1440p, incluso 4K con buena GPU).</li>
+                    <li>Juegos que requieren mucho CPU: simuladores (Microsoft Flight Simulator, Cities: Skylines), MMOs grandes (World of Warcraft con addons), y títulos de estrategia (Total War, Civilization VI).</li>
+                </ul>
+            </li>
+            <li>Ventaja: Compatible con streaming y grabación mientras juegas sin que baje el rendimiento.</li>
+        </ul>
+        <h3>4. Intel Core i9</h3>
+        <ul>
+            <li>Nivel de CPU: Entusiasta / extremo. 8-16 núcleos o más, hyperthreading, frecuencias muy altas.</li>
+            <li>Juegos recomendados:
+                <ul>
+                    <li>Todos los juegos AAA al máximo detalle y tasas altas de FPS.</li>
+                    <li>Streaming, edición de video o render mientras juegas sin impacto en rendimiento.</li>
+                    <li>Juegos que usan muchos hilos como simuladores complejos o títulos multihilo intensivos.</li>
+                </ul>
+            </li>
+            <li>Ventaja: Es el CPU más preparado para futuro y multitarea extrema; ideal si quieres jugar, hacer streaming, grabar y renderizar al mismo tiempo.</li>
+        </ul>
+ </article>
+</section>
+
+<hr>
+
+<article>
+<div>
+        <h2>Comparativa de procesadores Intel Core y AMD Ryzen (septiembre 2025)</h2>
+		<p>A continuación, se presenta una comparación de modelos recientes de Intel y AMD, incluyendo sus especificaciones, precios estimados y críticas destacadas por medios especializados.</p>
+    </div>
+<section> 
+    <h3>Intel Core Ultra 9 285K</h3>
+    <p>
+      Arquitectura: Arrow Lake-S<br>
+      Núcleos / Hilos: 24 (8P + 16E)<br>
+      Frecuencia Máxima: Hasta 5.7 GHz<br>
+      Precio Estimado: $549 USD<br>
+      Uso Recomendado: Productividad avanzada<br>
+	  Críticas destacadas: Mejoras en tareas multihilo; rendimiento en juegos similar al i9-14900K; mayor consumo energético; precio elevado en comparación con generaciones anteriores.
+    </p>
+    
+
+    <h3>AMD Ryzen 9 9950X</h3>
+    <p>
+      Arquitectura: Zen 5<br>
+      Núcleos / Hilos: 16 / 32<br>
+      Frecuencia Máxima: Hasta 5.7 GHz<br>
+      Precio Estimado: $649 USD<br>
+      Uso Recomendado: Alto rendimiento general<br>
+	  Críticas destacadas: Excelente en tareas multihilo; consumo energético más alto que el Ryzen 7 9700X; precio elevado en comparación con generaciones anteriores.
+    </p>
+     
+    <h3>AMD Ryzen 7 9700X</h3>
+    <p>
+      Arquitectura: Zen 5<br>
+      Núcleos / Hilos: 8 / 16<br>
+      Frecuencia Máxima: Hasta 5.5 GHz<br>
+      Precio Estimado: $318 USD<br>
+      Uso Recomendado: Gaming y multitarea ligera<br>
+	  Críticas destacadas: Buen rendimiento en juegos; consumo energético moderado; precio competitivo.
+    </p>
+
+    <h3>Intel Core Ultra 3 205</h3>
+    <p>
+      Arquitectura: Arrow Lake-S<br>
+      Núcleos / Hilos: 8 (4P + 4E)<br>
+      Frecuencia Máxima: 4.9 GHz<br>
+      Precio Estimado: $140–$150 USD<br>
+      Uso Recomendado: Uso básico y juegos ligeros<br>
+	  Críticas destacadas: Rendimiento superior al i3-14100; consumo energético eficiente; limitado en tareas intensivas.
+    </p>
+  </article>
+</section>
+
+<hr>
+
+<section>
+    <article>
+        <h2>¿Qué son los shaders de un videojuego?</h2>
+        <p>
+            Los shaders en un videojuego son programas pequeños que se ejecutan en la GPU (tarjeta gráfica) y se encargan de determinar cómo se ve cada píxel, vértice o fragmento de la imagen que se está mostrando en pantalla. En otras palabras, son los responsables de crear los efectos visuales y darle realismo o estilo artístico a los gráficos del juego.
+        </p>
+
+        <p>Se pueden clasificar principalmente en:</p>
+        
+        <ol>
+            <li>
+                <h3>Vertex Shaders</h3>
+                <ul>
+                    <li>Procesan cada vértice de un modelo 3D.</li>
+                    <li>Deciden la posición final en la pantalla del vértice.</li>
+                    <li>También pueden modificar atributos como color, normales o coordenadas de textura.</li>
+                    <li>Ejemplo: Hacer que un personaje se deforme al correr, o animar hojas de un árbol moviéndose con el viento.</li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                <h3>Fragment (o Pixel) Shaders</h3>
+                <ul>
+                    <li>Procesan cada fragmento/píxel que terminará en la pantalla.</li>
+                    <li>Determinan su color, brillo, transparencia, reflejos, sombras, etc.</li>
+                    <li>Ejemplo: Crear un efecto de agua que refleja la luz, o un cristal transparente que distorsiona lo que está detrás.</li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                <h3>Compute Shaders</h3>
+                <ul>
+                    <li>Más avanzados; no necesariamente dibujan nada directamente.</li>
+                    <li>Se usan para cálculos complejos en la GPU, como simulaciones de física, partículas, inteligencia artificial, o efectos de postprocesado.</li>
+                </ul>
+            </li>
+        </ol>
+        
+        <p>
+            Dicho con mis propias palabras, los shaders son un grupo de programas, relacionados profundamente con la Tarjeta gráfica, que se encargan del estilo de arte que se nos muestra de un videojuego. Pueden variar entre los gráficos más visualmente increíbles, aquellos que tienen detalles lujosos, o los gráficos más escasos, simples, que se muestran de una forma más superficial. Por ejemplo: activar los shaders en Minecraft involucra el poder ser testigo de gráficos apreciables en donde cada estructura del Mundo (área en donde se traslada el jugador) tiene una forma definida, tiene partes iluminadas y otras partes con sombra. Un Mundo visualmente redondo; por otra parte, desactivarlos llevaría a lo contrario, dando lugar a un Mundo carente de detalles, en donde todo se vería más plano.
+        </p>
+    </article>
+</section>
+
+<hr>
+
+<section>
+    <article>
+        <h2>Imagen creada por IA que represente el proyecto</h2>
+        <p>Esta imagen generada por IA busca capturar la esencia de la pasión por los videojuegos y la apreciación de los momentos personales, incluso dentro del mundo digital.</p>
+        <br>
+        <div>
+            <img src= "https://github.com/RusitaEveling1503/grupo_22/blob/Naahhwell/Imagenes%20e%20interacciones%20con%20IA/Streamer%20disfrutando%20de%20Minecraft%20mientras%20llega%20la%20noche.png" alt="Joven streamer disfrutando del atardecer en el videojuego Minecraft">
+            <p>“Joven streamer disfrutando del atardecer en el videojuego Minecraft”</p>
+            <p>La intención de la imagen reside en marcar la importancia de los gustos personales al menos una vez cada tanto, principalmente en una parte del día tan atractiva como el atardecer.</p>
+        </div>
+    </article>
+</section>
+
+<hr>
+
+<section>
+    <article>
+        <h2>Conclusiones</h2>
+        <p>
+            La IA me brindó muy buena ayuda a lo largo del Trabajo práctico, destacando la investigación de los componentes de mi propia computadora, tarea que sigue resultándome complicada debido a que carezco de conocimientos sobre cuáles componentes coinciden con cuales otros. Además me benefició en el análisis del rendimiento que se esperaría al realizar un stream sobre el videojuego seleccionado, Minecraft, desarrollando el por qué del cambio de FPS y cómo impactaría en el stream; otra ayuda relevante es la creación de la imagen del joven streamer jugando Minecraft por el atardecer.
+        </p>
+        <p>
+            Los errores que detecté se hallan en la comparación de los distintos procesadores de Intel Core y AMD Ryzen, en donde hubo precios menores a los que encontré en sitios web. Un caso es el del procesador AMD Ryzen 7, que aparecía con un precio de 318 USD en la respuesta de la IA mientras que en el sitio web Amazon aparecía a 359, rebajado a 299. Apartando ese ligero error de precios, no encontré ninguno más.
+        </p>
+        <p>
+            En casos como investigar los requisitos de un videojuego o buscar los mismos componentes seleccionados pero en otras páginas oficiales es cuando tengo la posibilidad de trabajar manualmente.
+        </p>
+    </article>
+</section>
+
+</body>
+</html>
