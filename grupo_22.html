@@ -74,6 +74,9 @@
                 font-size: 1.1em;
                 color: #2c3e50;
             }
+            .lista {
+              list-style: disc;
+            }
             li{
                 list-style:none;
                 font-family: Arial, Helvetica, sans-serif;
@@ -111,7 +114,7 @@
             }
         </style>
     </head>    
-    <body>
+  <body>
         <header label="Caratula">
             <h1>Universidad Autónoma de Entre Ríos</h1>
             <h2>Facultad de Ciencia y Tecnología</h2>
@@ -180,6 +183,7 @@
 
         </article>
       <hr/>
+        <section class="item" label="Nombre y descripcion del juego">
         <section label="Nombre y descripcion del juego">
             <article>
                 <p>El presente trabajo se centra en Minecraft Java Edition, un videojuego de tipo sandbox que mezcla aventura, acción, exploración y supervivencia. Fue creado por Markus Persson, conocido como Notch, y más tarde desarrollado por Mojang Studios. Una de las formas de juego más conocidas es la de supervivencia, donde el jugador tiene que juntar recursos, construir un refugio y defenderse de criaturas que aparecen de noche o en distintos lugares del mapa.</p>
@@ -192,11 +196,11 @@
                 
         </section>
          <hr>
-        <section label="Imagenes del juego">
+        <section class="item" label="Imagenes del juego">
             <div>
-                <img src="imagenes/Launcher.png" title="Launcher oficial de minecraft">
+                <img class="minecraft_img" src="imagenes/Launcher.png" title="Launcher oficial de minecraft">
                 <p>Este es el Launcher principal del juego, siendo el "oficial" distribuido por Mojang, habiendo tambien muchos más de manera "pirata".</p>
-                <img src="imagenes/Pantalla_de_inicio.png" title="Pantalla de inicio de minecraft">
+                <img class="minecraft_img" src="imagenes/Pantalla_de_inicio.png" title="Pantalla de inicio de minecraft">
                 <p>
                     Aqui se puede ver en la pantalla de inicio del juego.
                     Se puede jugar de manera "singleplayer" para jugar solo.
@@ -206,26 +210,26 @@
                 </p>
             </div>
             <br>
-            <div>
+            <article class="item">
                 <h1>Algunas imagenes del juego</h1>
-                <img src="imagenes/aldea3.png" title="Una aldea">
-                <img src="imagenes/aldea4.png" title="Otro aldea">
-                <img src="imagenes/refugio.png" title="Un refugio">
-                <img src="imagenes/refugioDentro.png" title="Un refugio por dentro">
-                <img src="imagenes/refugioDentro2.png" title="Un refugio por dentro">
-                <img src="imagenes/interfazDeCrafteo.png" title="Interfaz de la mesa de crafteo">
-                <img src="imagenes/portalNether.png" title="Portal al nether">
-                <img src="imagenes/nether.png" title="Algun lugar del nether">
-                <img src="imagenes/portalEnd.png" title="Portal al end">
-                <img src="imagenes/endEntrada.png" title="Entrada del end">
-                <img src="imagenes/dragon2.png" title="Pelea final">
-                <img src="imagenes/portalEndVuelta.png" title="Volviendo del end">
-                <img src="imagenes/inventarioCreativo.png" title="El inventario del modo creativo">
-            </div>
+                <img class="minecraft_img" src="imagenes/aldea3.png" title="Una aldea">
+                <img class="minecraft_img" src="imagenes/aldea4.png" title="Otro aldea">
+                <img class="minecraft_img" src="imagenes/refugio.png" title="Un refugio">
+                <img class="minecraft_img" src="imagenes/refugioDentro.png" title="Un refugio por dentro">
+                <img class="minecraft_img" src="imagenes/refugioDentro2.png" title="Un refugio por dentro">
+                <img class="minecraft_img" src="imagenes/interfazDeCrafteo.png" title="Interfaz de la mesa de crafteo">
+                <img class="minecraft_img" src="imagenes/portalNether.png" title="Portal al nether">
+                <img class="minecraft_img" src="imagenes/nether.png" title="Algun lugar del nether">
+                <img class="minecraft_img" src="imagenes/portalEnd.png" title="Portal al end">
+                <img class="minecraft_img" src="imagenes/endEntrada.png" title="Entrada del end">
+                <img class="minecraft_img" src="imagenes/dragon2.png" title="Pelea final">
+                <img class="minecraft_img" src="imagenes/portalEndVuelta.png" title="Volviendo del end">
+                <img class="minecraft_img" src="imagenes/inventarioCreativo.png" title="El inventario del modo creativo">
+            </article>
       
 
       </section>
-      <section label="Requerimientos para Jugar y Stremear minecraft">
+      <section class="item" label="Requerimientos para Jugar y Stremear minecraft">
         <article>
             <h2>Requerimientos mínimos</h2>
             <p>Información sobre hardware y software para ejecutar Minecraft en PC.</p>
@@ -246,25 +250,24 @@
             <h2>Requerimientos recomendados</h2>
             <h3>Componentes y especificaciones</h3>
             <ol>
-                <li><strong>Sistema operativo:</strong> Windows 10/11 (64-bit); versiones recientes de macOS / Linux</li>
-                <li><strong>Procesador (CPU):</strong> Intel Core i5-4690 o equivalente AMD</li>
-                <li><strong>Memoria RAM:</strong> 8 GB</li>
-                <li><strong>Tarjeta gráfica (GPU):</strong> GeForce 700 series / Radeon R7 / RX 200 series con soporte OpenGL 4.5</li>
-                <li><strong>Almacenamiento:</strong> 4 GB o más, preferiblemente en SSD</li>
-                <li><strong>Resolución:</strong> 1920×1080 (FULL HD)</li>
+                <li>Sistema operativo:</strong> Windows 10/11 (64-bit); versiones recientes de macOS / Linux</li>
+                <li>Procesador (CPU):</strong> Intel Core i5-4690 o equivalente AMD</li>
+                <li>Memoria RAM:</strong> 8 GB</li>
+                <li>Tarjeta gráfica (GPU):</strong> GeForce 700 series / Radeon R7 / RX 200 series con soporte OpenGL 4.5</li>
+                <li>Almacenamiento:</strong> 4 GB o más, preferiblemente en SSD</li>
+                <li>Resolución:</strong> 1920×1080 (FULL HD)</li>
             </ol>
         </article>
     </section>
-       <section label="Comparaciones">
-        <h2>Comparaciones descripitivas</h2>
+       <section class="item" label="Comparaciones">
             <article>
+                <h2>Comparaciones descripitivas</h2>
                 <p>
                     Decidimos realizar la comparación técnica con otros juegos, basándonos en su popularidad,
                     y nuestro conocimiento de cada juego,
                     si bien son juegos diferentes, creímos en la posibilidad de generalizar nuestra computadora,
                     para correr distinta variedad de juegos, ya que un streamer debería poder adaptarse a las tendencias.
                 </p>
-            </article>
             <div>
                 <p>
                     Por un lado tenemos Phasmophobia: Ofrece un gameplay multijugador de hasta 4 personas, con temática de horror e investigación paranormal.
@@ -285,346 +288,389 @@
                     mientras que los antiterroristas tienen que llevar todos los rehenes a salvo a su base.
                 </p>
             </div>
-            <div>
-                <p>Ambos juegos tienen gráficos elevados, aunque no se comparen con minecraft base, se pueden comparar si a minecraft le incluimos shaders(sombras).
-                    Para poder armar una computadora que corra estos 3 juegos teniendo un streaming fluido se necesitan estos mínimos requisitos de hardware.</p><h4>Requisitos minimos</h4>
-                <ul>
-                    <h2>Hardware</h2>
-                        <li>Procesador de 6 núcleos y 12 hilos de socket AM4, como recomendado un: AMD Ryzen 5 5600G.</li>
-                        <li>Ram de 16gb si es posible una DDR4, o dos de 8gb.</li>
-                        <li>Disco o unidad de estado sólido (SSD) de 512gb.</li>
-                        <li>Fuente de 650W.</li>
-                        <li>GPU o tarjeta gráfica GTX 1650 de 4gb.</li>
-                        <li>Motherboard (Placamadre) con un chipset B450, de tipo Mini ATX, compatible con procesador AM4.</li>
-                    <h2>Software</h2>
-                        <li>Windows 10 64bit</li>
-                        <li>Steam o EpicGames para comprar los juegos</li>
-                        <li>Java el paquete de JDK</li>
-                        <li>OBS studio</li>
-                        <li>Navegador: Chrome, Edge o OperaGX </li>
-                </ul>
-            </div>
+            </article>
+       </section>
+       <section class="item" label="Requisitos de hardware y software para stremear">
+            <article>
+                <div>
+                    <p>Ambos juegos tienen gráficos elevados, aunque no se comparen con minecraft base, se pueden comparar si a minecraft le incluimos shaders(sombras).
+                        Para poder armar una computadora que corra estos 3 juegos teniendo un streaming fluido se necesitan estos mínimos requisitos de hardware.</p><h4>Requisitos minimos</h4>
+                    <ul>
+                        <h2 class="subtitle">Hardware</h2>
+                            <li>Procesador de 6 núcleos y 12 hilos de socket AM4, como recomendado un: AMD Ryzen 5 5600G.</li>
+                            <li>Ram de 16gb si es posible una DDR4, o dos de 8gb.</li>
+                            <li>Disco o unidad de estado sólido (SSD) de 512gb.</li>
+                            <li>Fuente de 650W.</li>
+                            <li>GPU o tarjeta gráfica GTX 1650 de 4gb.</li>
+                            <li>Motherboard (Placamadre) con un chipset B450, de tipo Mini ATX, compatible con procesador AM4.</li>
+                        <h2 class="subtitle">Software</h2>
+                            <li>Windows 10 64bit</li>
+                            <li>Steam o EpicGames para comprar los juegos</li>
+                            <li>Java el paquete de JDK</li>
+                            <li>OBS studio</li>
+                            <li>Navegador: Chrome, Edge o OperaGX </li>
+                    </ul>
+                </div>
+            </article>
         </section>
-        <footer class="conclusionesIA">
 
-        </footer>
-    </body>
-          
- </html>
-<!doctype html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <title>Listado de Componentes, Periféricos y Sistema Operativo de Marcos D. Castrogiovanni</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-</head>
-<body>
-  <header>
-    <h1>Lista de componentes, periféricos y totales</h1>
-    <hr>
-  </header>
+        <hr>
+            <h1>Presupuestos de los Integrantes</h1>
+     
+/* -------------------------------------------------------------------- */
+    <section label="Marcos Daniel Castrogiovanni">
+      <div class="items">
+        <article class="PC">
+          <h2 class="header">Lista de componentes, periféricos y totales</h2>
 
-  <section>
-    <h2>Componentes</h2>
+          <ul>
+            <li class="lista">CPU: Micro Intel Core I5 14400F S/VIDEO C/COOLER S1700</li>
+            <li class="lista">Precio aprox.: $251.180,00</li>
+            <li class="lista">Elegí este procesador y no otro procesador,
+              ya que es económico y práctico para empezar a adentrarse en el straming. 
+              Además, si tenés un presupuesto acotado, te ofrece núcleos e hilos suficientes 
+              tanto para stremear como para jugar o ambas. Por otro lado, viene incorporado con un Cooler
+            </li>
+            <li class="lista">Link: <a href="https://fullh4rd.com.ar/prod/27188/micro-intel-core-i5-14400f-s-video-c-cooler-s1700" target="_blank" rel="noopener">https://fullh4rd.com.ar/prod/27188/micro-intel-core-i5-14400f-s-video-c-cooler-s1700</a></li>
 
-    <article>
-      <h3>CPU</h3>
-      <p>Micro Intel Core I5 14400F S/VIDEO C/COOLER S1700</p>
-      <p>Precio aprox.: $251.180,00</p>
-      <p>Link: <a href="https://fullh4rd.com.ar/prod/27188/micro-intel-core-i5-14400f-s-video-c-cooler-s1700" target="_blank" rel="noopener">https://fullh4rd.com.ar/prod/27188/micro-intel-core-i5-14400f-s-video-c-cooler-s1700</a></p>
-      <hr>
-    </article>
+            <li class="lista">GPU: Galax Nvidia Geforce RTX 3050 6GB EX GDDR6 1-Click OC - Black</li>
+            <li class="lista">Precio aprox.: $319.635,00</li>
+            <li class="lista">Seleccioné esta Tarjeta de Video ya que se adapta bastante bien al presupueto
+              y a lo que necesitaría. Con esta tarjeta se puede stremear y jugar tranquilamente.
+              Ofrece un rendimiento en juegos en 1080p y una buena capacidad de ahorro de energía.
+            </li>
+            <li class="lista">Link: <a href="https://www.maximus.com.ar/Producto/Placa-de-Video-Galax-Nvidia-Geforce-RTX-3050-EX-6GB-GDDR6-1-Click-OC---Black/ITEM=19081/maximus.aspx?PN=35NRLDHP9ODV" target="_blank" rel="noopener">https://www.maximus.com.ar/Producto/Placa-de-Video-Galax-Nvidia-Geforce-RTX-3050-EX-6GB-GDDR6-1-Click-OC---Black/ITEM=19081/maximus.aspx?PN=35NRLDHP9ODV</a></li>
 
-    <article>
-      <h3>GPU</h3>
-      <p>Galax Nvidia Geforce RTX 3050 6GB EX GDDR6 1-Click OC - Black</p>
-      <p>Precio aprox.: $319.635,00</p>
-      <p>Link: <a href="https://www.maximus.com.ar/Producto/Placa-de-Video-Galax-Nvidia-Geforce-RTX-3050-EX-6GB-GDDR6-1-Click-OC---Black/ITEM=19081/maximus.aspx?PN=35NRLDHP9ODV" target="_blank" rel="noopener">https://www.maximus.com.ar/Producto/Placa-de-Video-Galax-Nvidia-Geforce-RTX-3050-EX-6GB-GDDR6-1-Click-OC---Black/ITEM=19081/maximus.aspx?PN=35NRLDHP9ODV</a></p>
-      <hr>
-    </article>
+            <li class="lista">Motherboard: Asus Prime B660M-A DDR4 DDR4 S1700</li>
+            <li class="lista">Precio aprox.: $117.320,00</li>
+            <li class="lista">Elegí esta Placa Madre porque presenta una buena base para mi procesador Intel y tiene soporte
+              para las DDR4, que son más económicas que las DDR5. Además, cuenta con varias opciones de conectividad.
+              También, algo para destacar, es que se puede actualizar el BIOS permitiendo mejorar la compatibilidad 
+              con procesadores más recientes de 12ª, 13ª y 14ª generación de Intel
+            </li>
+            <li class="lista">Link: <a href="https://www.maximus.com.ar/Producto/OUTLET---Motherboard-Asus-Prime-B660M-A-DDR4-DDR4-S1700/ITEM=19190/maximus.aspx?PN=90MB19K0-M0EAY0-OUTLET2" target="_blank" rel="noopener">https://www.maximus.com.ar/Producto/OUTLET---Motherboard-Asus-Prime-B660M-A-DDR4-DDR4-S1700/ITEM=19190/maximus.aspx?PN=90MB19K0-M0EAY0-OUTLET2</a></li>
+ 
+            <li class="lista">Memoria RAM: 16GB DDR4 3600 Kingston Fury Renegade RGB</li>
+            <li class="lista">Precio aprox.: $150.970,00</li>
+            <li class="lista"> La elegí porque brinda un equilibrio entre lo estético, económico y de buen rendimiento.
+              Con 16GB tendía suficiente para jugar y stremear sin problemas, y la velocidad de 3600MHz 
+              ayuda a mejorar el rendimiento general del sistema. Incluso tiene un toque visual atractivo por el
+              RGB integrado
+            </li> 
+            <li class="lista">Link: <a href="https://fullh4rd.com.ar/prod/21041/memoria-16gb-ddr4-3600-kingston-fury-renegade-rgb" target="_blank" rel="noopener">https://fullh4rd.com.ar/prod/21041/memoria-16gb-ddr4-3600-kingston-fury-renegade-rgb</a></li>
 
-    <article>
-      <h3>Placa madre</h3>
-      <p>Motherboard Asus Prime B660M-A DDR4 DDR4 S1700</p>
-      <p>Precio aprox.: $117.320,00</p>
-      <p>Link: <a href="https://www.maximus.com.ar/Producto/OUTLET---Motherboard-Asus-Prime-B660M-A-DDR4-DDR4-S1700/ITEM=19190/maximus.aspx?PN=90MB19K0-M0EAY0-OUTLET2" target="_blank" rel="noopener">https://www.maximus.com.ar/Producto/OUTLET---Motherboard-Asus-Prime-B660M-A-DDR4-DDR4-S1700/ITEM=19190/maximus.aspx?PN=90MB19K0-M0EAY0-OUTLET2</a></p>
-      <hr>
-    </article>
+            <li class="lista">Almacenamiento: SSD Western Digital 1T Blue SD 5000 Nvma 5 150mb/s Gen 4</li>
+            <li class="lista">Precio aprox.: $128.276,00</li>
+            <li class="lista">"Opté por esta SSD porque tiene una buena velocidad de lectura y escritura,
+              lo que mejora el rendimiento general de la computadora. Además, con 1TB de capacidad,
+              ofrece suficiente espacio para almacenar el sistema operativo, juegos y otros archivos importantes.
+            </li>
+            <li class="lista">Link: <a href="https://rockethard.com.ar/hardware/ssd/disco-ssd-western-digital-1t-blue-sn5000-nvme-5150mb-s-gen4-163156.html" target="_blank" rel="noopener">https://rockethard.com.ar/hardware/ssd/disco-ssd-western-digital-1t-blue-sn5000-nvme-5150mb-s-gen4-163156.html</a></li>
 
-    <article>
-      <h3>Memoria RAM</h3>
-      <p>16GB DDR4 3600 Kingston Fury Renegade RGB</p>
-      <p>Precio aprox.: $150.970,00</p>
-      <p>Link: <a href="https://fullh4rd.com.ar/prod/21041/memoria-16gb-ddr4-3600-kingston-fury-renegade-rgb" target="_blank" rel="noopener">https://fullh4rd.com.ar/prod/21041/memoria-16gb-ddr4-3600-kingston-fury-renegade-rgb</a></p>
-      <hr>
-    </article>
+            <li class="lista">Fuente: 550W Gigabyte P550SS Ice 80 Plus Silver</li>
+            <li class="lista">Precio aprox.: $80.920,00</li>
+            <li class="lista">Preferí esta fuente porque es económica y posee la potencia justa y
+              la eficiencia necesaria para alimentar todos los componentes de mi PC sin problemas.
+              Además, al ser de una marca confiable y con buena calidad de fabricado,
+              me asegura un funcionamiento seguro y silencioso.
+            </li>
+            <li class="lista">Link: <a href="https://www.maximus.com.ar/Producto/Fuente-550W-Gigabyte-P550SS-Ice-80-Plus-Silver/ITEM=15635/maximus.aspx" target="_blank" rel="noopener">https://www.maximus.com.ar/Producto/Fuente-550W-Gigabyte-P550SS-Ice-80-Plus-Silver/ITEM=15635/maximus.aspx</a></li>
 
-    <article>
-      <h3>Almacenamiento</h3>
-      <p>SSD Western Digital 1T Blue SD 5000 Nvma 5 150mb/s Gen 4</p>
-      <p>Precio aprox.: $128.276,00</p>
-      <p>Link: <a href="https://rockethard.com.ar/hardware/ssd/disco-ssd-western-digital-1t-blue-sn5000-nvme-5150mb-s-gen4-163156.html" target="_blank" rel="noopener">https://rockethard.com.ar/hardware/ssd/disco-ssd-western-digital-1t-blue-sn5000-nvme-5150mb-s-gen4-163156.html</a></p>
-      <hr>
-    </article>
-
-    <article>
-      <h3>Fuente de poder</h3>
-      <p>Fuente 550W Gigabyte P550SS Ice 80 Plus Silver</p>
-      <p>Precio aprox.: $80.920,00</p>
-      <p>Link: <a href="https://www.maximus.com.ar/Producto/Fuente-550W-Gigabyte-P550SS-Ice-80-Plus-Silver/ITEM=15635/maximus.aspx" target="_blank" rel="noopener">https://www.maximus.com.ar/Producto/Fuente-550W-Gigabyte-P550SS-Ice-80-Plus-Silver/ITEM=15635/maximus.aspx</a></p>
-      <hr>
-    </article>
-
-    <article>
-      <h3>Gabinete</h3>
-      <p>EAGLE Warriors CE 20AA 4FAN ARGB ATX</p>
-      <p>Precio aprox.: $68.156,00</p>
-      <p>Link: <a href="https://fullh4rd.com.ar/prod/30180/gabinete-eagle-warrior-cg-20aa-4fan-argb-atx" target="_blank" rel="noopener">https://fullh4rd.com.ar/prod/30180/gabinete-eagle-warrior-cg-20aa-4fan-argb-atx</a></p>
-      <hr>
-    </article>
-
-    <article>
-      <h3>UPS</h3>
-      <p>Ups Lyonn Ctb-800v 800va Con Led Color Negro</p>
-      <p>Precio aprox.: $105.297,00</p>
-      <p>Link: <a href="https://www.getbox.com.ar/ups-lyonn-ctb-800v-800va-con-led-color-negro/p/MLA21238051" target="_blank" rel="noopener">https://www.getbox.com.ar/ups-lyonn-ctb-800v-800va-con-led-color-negro/p/MLA21238051</a></p>
-      <hr>
-    </article>
-
-    <p><strong>TOTAL COMPONENTES: $1.221.754,00</strong></p>
-  </section>
-
-  <section>
-    <h2>Periféricos</h2>
-
-    <article>
-      <h3>Monitor</h3>
-      <p>Coolermaster 24” GA241 LED FHD 100 Hz 1 ms VGA HDMI</p>
-      <p>Precio aprox.: $157.050,00</p>
-      <p>Link: <a href="https://fullh4rd.com.ar/prod/28673/monitor-24-coolermaster-ga241-led-fhd-100hz-1ms-vga-hdmi" target="_blank" rel="noopener">https://fullh4rd.com.ar/prod/28673/monitor-24-coolermaster-ga241-led-fhd-100hz-1ms-vga-hdmi</a></p>
-      <hr>
-    </article>
-
-    <article>
-      <h3>Teclado (cable)</h3>
-      <p>Gamer Polaroid luces PGK-861 Pro G</p>
-      <p>Precio aprox.: $7.700,00</p>
-      <p>Link: <a href="https://www.fravega.com/p/teclado-gamer-polaroid-luces-pgk-861-pro-g-21713764/" target="_blank" rel="noopener">https://www.fravega.com/p/teclado-gamer-polaroid-luces-pgk-861-pro-g-21713764/</a></p>
-      <hr>
-    </article>
-
-    <article>
-      <h3>Mouse (cable)</h3>
-      <p>Blackpoint A20 negro</p>
-      <p>Precio aprox.: $4.500,00</p>
-      <p>Link: <a href="https://www.fravega.com/p/mouse-con-cable-usb-blackpoint-a20-negro-21123270/" target="_blank" rel="noopener">https://www.fravega.com/p/mouse-con-cable-usb-blackpoint-a20-negro-21123270/</a></p>
-      <hr>
-    </article>
-
-    <article>
-      <h3>Cámara</h3>
-      <p>Ready Micro C721 HD 720p con micrófono para stream</p>
-      <p>Precio aprox.: $10.900,00</p>
-      <p>Link: <a href="https://www.fravega.com/p/camara-web-micro-c721-hd-720p-ready-con-microfono-stream-20295916/" target="_blank" rel="noopener">https://www.fravega.com/p/camara-web-micro-c721-hd-720p-ready-con-microfono-stream-20295916/</a></p>
-      <hr>
-    </article>
-
-    <article>
-      <h3>Auriculares con micrófono</h3>
-      <p>Targa TG-PH450 Headset Over Ear</p>
-      <p>Precio aprox.: $17.570,00</p>
-      <p>Link: <a href="https://www.fravega.com/p/auriculares-con-microfono-gamer-targa-tg-ph450-headset-over-ear-20952813/" target="_blank" rel="noopener">https://www.fravega.com/p/auriculares-con-microfono-gamer-targa-tg-ph450-headset-over-ear-20952813/</a></p>
-      <hr>
-    </article>
-
-    <article>
-      <h3>Receptor Wi-Fi</h3>
-      <p>300 Mbps Nano USB DX-WUSB330 Dinax</p>
-      <p>Precio aprox.: $6.000,00</p>
-      <p>Link: <a href="https://www.fravega.com/p/receptor-wifi-de-red-inalambrica-300-mbps-nano-usb-dx-wusb330-dinax-22070043/" target="_blank" rel="noopener">https://www.fravega.com/p/receptor-wifi-de-red-inalambrica-300-mbps-nano-usb-dx-wusb330-dinax-22070043/</a></p>
-      <hr>
-    </article>
-
-    <article>
-      <h3>Receptor Bluetooth</h3>
-      <p>Adaptador TP-Link 5.0 Nano USB UB500</p>
-      <p>Precio aprox.: $11.535,50</p>
-      <p>Link: <a href="https://www.fravega.com/p/adaptador-bluetooth-5-0-tp-link-ub500-nano-usb-990079115/" target="_blank" rel="noopener">https://www.fravega.com/p/adaptador-bluetooth-5-0-tp-link-ub500-nano-usb-990079115/</a></p>
-      <hr>
-    </article>
-
-    <p><strong>TOTAL PERIFÉRICOS: $215.255,50</strong></p>
-  </section>
-
-  <section>
-    <h2>Categoría: Software y accesorios</h2>
-
-    <article>
-      <h3>Sistema Operativo</h3>
-      <p>Windows 11 Pro Licencia Digital</p>
-      <p>Precio aprox.: $14.965,00</p>
-      <p>Link: <a href="https://paraisogamer.com.ar/productos/windows-11-pro-digital-licencia-oficial/" target="_blank" rel="noopener">https://paraisogamer.com.ar/productos/windows-11-pro-digital-licencia-oficial/</a></p>
-      <hr>
-    </article>
-
-    <article>
-      <h3>Pendrive</h3>
-      <p>USB 32GB HP V150W USB 2.0</p>
-      <p>Precio aprox.: $11.000,00</p>
-      <p>Link: <a href="https://www.oncity.com/pendrive-kingston-exodia-dtx-64gb-64gb-usb-3-2-3-0-original-51211/p" target="_blank" rel="noopener">https://www.oncity.com/pendrive-kingston-exodia-dtx-64gb-64gb-usb-3-2-3-0-original-51211/p</a></p>
-      <hr>
-    </article>
-
-    <p><strong>TOTAL SOFTWARE Y ACCESORIOS: $25.965,00</strong></p>
-  </section>
-
-  <footer>
-    <h2>Resumen final</h2>
-    <p>TOTAL DE TODOS LOS PRODUCTOS: $1.462.974,50 ARS</p>
+            <li class="lista">Gabinete: EAGLE Warriors CE 20AA 4FAN ARGB ATX</li>
+            <li class="lista">Precio aprox.: $68.156,00</li>
+            <li class="lista">A este gabinete lo elegí porque era esteticamente bueno y compatible con los tamaños de
+              los componentes. Tiene incluido un conjunto de 4 ventiladores ARGB Diamond que ayudan a mantener un buen
+              flujo de aire para mantener los componentes frescos durante largas sesiones de juego o streaming.
+            </li>
+            <li class="lista">Link: <a href="https://fullh4rd.com.ar/prod/30180/gabinete-eagle-warrior-cg-20aa-4fan-argb-atx" target="_blank" rel="noopener">https://fullh4rd.com.ar/prod/30180/gabinete-eagle-warrior-cg-20aa-4fan-argb-atx</a></li>
     
-  </footer>
-</body>
-</html>
-<!doctype html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <title>2  Reflexión y Capturas AI</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-  <header>
-    <h1>Capturas Reflexión</h1>
-  </header>
-
-  <section>
-    <article>
-      <h2>Captura de elección del procesador</h2>
-      <p>Me parece que el Intel Core i5-14400F es una excelente opción para jugar y empezar a streamear sin tener que gastar demasiado y si tu presupuesto no es mucho. No sé mucho sobre procesadores, pero me informé un poco y me gusta que este modelo ofrezca un buen equilibrio entre potencia y precio. Aunque no tiene video integrado, al venir con cooler incluido resulta más práctico y económico al momento de armar la PC. Además, su rendimiento es bueno para juegos como Minecraft y otros videojuegos, permitiendo jugar y transmitir sin problemas. Creo que es una alternativa económica, eficiente y con buena calidad para quienes buscan un equipo confiable sin irse a lo más caro.
-
-      <div>
-        <img src="https://i.imgur.com/oTywaim.png" alt="Imagen 1 - Captura de elección del procesador">
+            <li class="lista">UPS: Lyonn Ctb-800v 800va Con Led Color Negro</li>
+            <li class="lista">Precio aprox.: $105.297,00</li>
+            <li class="lista">El UPS que elegí brinda la protección básica necesaria para mi equipo ante cortes de energía
+              o picos de tensión, evitando daños a los componentes y pérdidas de información. 
+              La capacidad de 800VA es suficiente para mantener todo el sistema por algunos minutos, 
+              lo que permite apagarlo de forma segura.
+            </li>
+            <li class="lista">Link: <a href="https://www.getbox.com.ar/ups-lyonn-ctb-800v-800va-con-led-color-negro/p/MLA21238051" target="_blank" rel="noopener">https://www.getbox.com.ar/ups-lyonn-ctb-800v-800va-con-led-color-negro/p/MLA21238051</a></li>
+            <li>TOTAL COMPONENTES: $1.221.754,00  </li>
+          </ul>
+        </article>
       </div>
-    </article>
+    </section>
 
-    <hr>
 
-    <article>
-      <h2>Captura diferencia entre procesadores</h2>
-      <p>Después de investigar un poco, me doy cuenta de que no todos los procesadores son iguales. Por ejemplo, un i5 parece ser mucho más rápido y capaz que un i3, especialmente si quiero hacer varias cosas al mismo tiempo o jugar mientras transmito. Creo que el i3 puede servir para tareas simples como navegar por Internet o estudiar, pero si quiero que la computadora rinda mejor a largo plazo, conviene invertir un poco más en un i5. Me hace pensar que elegir bien el procesador depende de lo que uno necesita realmente y del presupuesto que tenga.
+    <section>
+      <div class="items">
+      <article class="PC">
+          <ul>
+            <li class="lista">Monitor: Coolermaster 24” GA241 LED FHD 100 Hz 1 ms VGA HDMI
+            <li class="lista">Precio aprox.: $157.050,00
+            <li class="lista">Link: <a href="https://fullh4rd.com.ar/prod/28673/monitor-24-coolermaster-ga241-led-fhd-100hz-1ms-vga-hdmi" target="_blank" rel="noopener">https://fullh4rd.com.ar/prod/28673/monitor-24-coolermaster-ga241-led-fhd-100hz-1ms-vga-hdmi</a></li>
+            <li class="lista">Elegí este monitor porque</li>
 
-      <div>
-        <img src="https://i.imgur.com/OKlRluu.png" alt="Imagen 2 - Diferencia entre procesadores">
+            <li class="lista">Teclado con cable: Gamer Polaroid luces PGK-861 Pro G</li>
+            <li class="lista">Precio aprox.: $7.700,00</li>
+            <li class="lista">Link: <a href="https://www.fravega.com/p/teclado-gamer-polaroid-luces-pgk-861-pro-g-21713764/" target="_blank" rel="noopener">https://www.fravega.com/p/teclado-gamer-polaroid-luces-pgk-861-pro-g-21713764/</a></li>
+
+            <li class="lista">Mouse con cable: Blackpoint A20 negro</li>
+            <li class="lista">Precio aprox.: $4.500,00</li>
+            <li class="lista">Link: <a href="https://www.fravega.com/p/mouse-con-cable-usb-blackpoint-a20-negro-21123270/" target="_blank" rel="noopener">https://www.fravega.com/p/mouse-con-cable-usb-blackpoint-a20-negro-21123270/</a></li>
+
+            <li class="lista">Cámara: Ready Micro C721 HD 720p con micrófono para stream</li>
+            <li class="lista">Precio aprox.: $10.900,00</li>
+            <li class="lista">Link: <a href="https://www.fravega.com/p/camara-web-micro-c721-hd-720p-ready-con-microfono-stream-20295916/" target="_blank" rel="noopener">https://www.fravega.com/p/camara-web-micro-c721-hd-720p-ready-con-microfono-stream-20295916/</a></li>
+
+            <li class="lista">Auriculares con micrófono: Targa TG-PH450 Headset Over Ear</li>
+            <li class="lista">Precio aprox.: $17.570,00</li>
+            <li class="lista">Link: <a href="https://www.fravega.com/p/auriculares-con-microfono-gamer-targa-tg-ph450-headset-over-ear-20952813/" target="_blank" rel="noopener">https://www.fravega.com/p/auriculares-con-microfono-gamer-targa-tg-ph450-headset-over-ear-20952813/</a></li>
+
+            <li class="lista">Receptor Wi-Fi: 300 Mbps Nano USB DX-WUSB330 Dinax</li>
+            <li class="lista">Precio aprox.: $6.000,00</li>
+            <li class="lista">Link: <a href="https://www.fravega.com/p/receptor-wifi-de-red-inalambrica-300-mbps-nano-usb-dx-wusb330-dinax-22070043/" target="_blank" rel="noopener">https://www.fravega.com/p/receptor-wifi-de-red-inalambrica-300-mbps-nano-usb-dx-wusb330-dinax-22070043/</a></li>
+
+            <li class="lista">Receptor Bluetooth: Adaptador TP-Link 5.0 Nano USB UB500</li>
+            <li class="lista">Precio aprox.: $11.535,50</li>
+            <li class="lista">Link: <a href="https://www.fravega.com/p/adaptador-bluetooth-5-0-tp-link-ub500-nano-usb-990079115/" target="_blank" rel="noopener">https://www.fravega.com/p/adaptador-bluetooth-5-0-tp-link-ub500-nano-usb-990079115/</a></li>
+
+            <li>  TOTAL PERIFÉRICOS: $215.255,50  </li>
+          </ul>
+        </article>
       </div>
+    </section>
 
-      <div>
-        <img src="https://i.imgur.com/NJMFQAq.png" alt="Imagen 3 - Cuadro comparativo Intel i5 vs i3">
+    <section>
+      <div class="items">
+        <article class="PC">
+          <ul class="lista">
+            <li class="lista">Sistema Operativo: Windows 11 Pro Licencia Digital</li>
+            <li class="lista">Precio aprox.: $14.965,00</li>
+            <li class="lista">Opté por Windows 11 Pro con licencia digital porque es el sistema operativo 
+              más compatible con juegos y programas de streaming, algo fundamental para este tipo de uso.
+              A diferencia de macOS o Linux, que suelen requerir configuraciones adicionales o no soportan muchos títulos 
+              de manera nativa, Windows permite instalar y ejecutar todos los juegos y aplicaciones sin complicaciones. 
+              Además, su versión Pro ofrece herramientas útiles de seguridad y productividad.
+            </li>
+            <li class="lista">Link: <a href="https://paraisogamer.com.ar/productos/windows-11-pro-digital-licencia-oficial/" target="_blank" rel="noopener">https://paraisogamer.com.ar/productos/windows-11-pro-digital-licencia-oficial/</a></li>
+
+            <li class="lista">Pendrive: USB 32GB HP V150W USB 2.0
+            <li class="lista">Precio aprox.: $11.000,00
+            <li class="lista">Link: <a href="https://www.oncity.com/pendrive-kingston-exodia-dtx-64gb-64gb-usb-3-2-3-0-original-51211/p" target="_blank" rel="noopener">https://www.oncity.com/pendrive-kingston-exodia-dtx-64gb-64gb-usb-3-2-3-0-original-51211/p</a></li>
+    
+            <li>TOTAL SOFTWARE Y ACCESORIOS: $25.965,00  </li>
+            <li>TOTAL DE TODOS LOS PRODUCTOS: $1.462.974,50 ARS</li>
+          </ul>
+        </article>
       </div>
-    </article>
-  </section>
-</body>
-</html>
-<!doctype html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <title>Comparativa punto 2</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-  <header>
-    <h1>Comparativa: Core i7-13700K vs Ryzen 7 7800X3D</h1>
-  </header>
+    </section>
 
-  <section>
-    <article>
-      <h2>Característica</h2>
-      <ul>
-        <li><strong>Arquitectura:</strong> Core i7-13700K — Raptor Lake (Intel 7, ~10 nm); Ryzen 7 7800X3D — Zen 4 (5 nm).</li>
-        <li><strong>Núcleos / Hilos:</strong> Core i7-13700K — 16 núcleos (8 P + 8 E) / 24 hilos; Ryzen 7 7800X3D — 8 núcleos / 16 hilos.</li>
-        <li><strong>Frecuencia base:</strong> Core i7-13700K — P-cores 3,40 GHz, E-cores 2,50 GHz; Ryzen 7 7800X3D — 4,20 GHz.</li>
-        <li><strong>Frecuencia máxima (Boost):</strong> Core i7-13700K — Hasta 5,40 GHz (P-cores); Ryzen 7 7800X3D — Hasta 5,00 GHz.</li>
-        <li><strong>Gráficos integrados:</strong> Core i7-13700K — Intel UHD Graphics 770; Ryzen 7 7800X3D — Radeon Graphics (integrados).</li>
-        <li><strong>Caché total:</strong> Core i7-13700K — 30 MB Smart Cache (L3) + 24 MB L2; Ryzen 7 7800X3D — 96 MB (L3 “3D V-Cache”) + 8 MB L2.</li>
-        <li><strong>Consumo (TDP):</strong> Core i7-13700K — 125 W base, hasta ~253 W en turbo; Ryzen 7 7800X3D — 120 W.</li>
-        <li><strong>Socket:</strong> Core i7-13700K — LGA1700 / FCLGA1700; Ryzen 7 7800X3D — AM5.</li>
-        <li><strong>Memoria compatible:</strong> Core i7-13700K — DDR4-3200 o DDR5-5600 (dual-channel); Ryzen 7 7800X3D — DDR5 hasta 5200 MT/s.</li>
-        <li><strong>Precio aproximado (2025):</strong> Core i7-13700K — USD 350-420 (valor de lanzamiento $409); Ryzen 7 7800X3D — USD 330-500 (valor de lanzamiento $449).</li>
-      </ul>
+    <footer label="iteracciones con IA">
+      <section>
+        <style>
+          img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            border-radius: 10px;
+          }
+        </style>
 
-      <h3>Fuente</h3>
-      <p>Información tomada de <a href="https://technical.city/es/cpu/Core-i7-13700K-vs-Ryzen-7-7800X3D#general-info">technical.city</a>.</p>
+        <article>
+          <h2>Reflexión y Capturas AI: Elección del procesador</h2>
 
-      <hr>
+          <p>Me parece que el Intel Core i5-14400F es una excelente opción para jugar y empezar a streamear sin tener que gastar demasiado
+            y si tu presupuesto no es mucho. No sé mucho sobre procesadores, pero me informé un poco y me gusta que este modelo ofrezca
+            un buen equilibrio entre potencia y precio. Aunque no tiene video integrado, al venir con cooler incluido resulta más práctico
+            y económico al momento de armar la PC. Además, su rendimiento es bueno para juegos como Minecraft y otros videojuegos,
+            permitiendo jugar y transmitir sin problemas. Creo que es una alternativa económica, eficiente y con buena calidad
+            para quienes buscan un equipo confiable sin irse a lo más caro.
+          </p>
 
-      <h2>Conclusión personal</h2>
-      <p>Si tuviera que elegir, me inclinaría por el Ryzen 7 7800X3D. Más que nada porque, aunque no entiendo mucho de componentes, veo que tiene mejor eficiencia y un rendimiento muy bueno en juegos gracias a esa caché grande que trae. Además, consume menos energía y calienta menos que el i7, lo cual me parece importante si no quiero tener problemas de temperatura o con la fuente. El i7 también es muy bueno, pero por lo que estuve viendo, el Ryzen parece rendir más parejo sin gastar tanto. Así que, teniendo en cuenta la potencia, consumo y precio, me quedo con el Ryzen.</p>
-    </article>
-  </section>
+          <img src="https://i.imgur.com/oTywaim.png" alt="Imagen 1 - Captura de elección del procesador">
+        </article>
 
-  <footer>
-    <p>&nbsp;</p>
-  </footer>
-</body>
-</html>
-<!doctype html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <title>Resumen técnico explicado con IA</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-  <header>
-    <h1>Resumen técnico explicado con IA</h1>
-  </header>
+        <hr>
 
-  <section>
-    <article>
-      <h2>¿Qué es el bitrate en streaming?</h2>
-      <h3>Explicación de la IA:</h3>
-      <p>El bitrate es la cantidad de datos que se transfieren por segundo en una transmisión de video o audio digital. Se mide en kilobits por segundo (kbps) o megabits por segundo (Mbps). Un mayor bitrate generalmente significa mejor calidad de imagen o sonido, pero también requiere más ancho de banda para poder transmitirse sin interrupciones.</p>
+        <article>
+          <h2>Captura diferencia entre procesadores</h2>
+          <p>Después de investigar un poco, me doy cuenta de que no todos los procesadores son iguales. 
+            Por ejemplo, un i5 parece ser mucho más rápido y capaz que un i3, especialmente si quiero hacer
+            varias cosas al mismo tiempo o jugar mientras transmito. 
+            Creo que el i3 puede servir para tareas simples como navegar por Internet o estudiar,
+            pero si quiero que la computadora rinda mejor a largo plazo, conviene invertir un poco más en un i5. 
+            Me hace pensar que elegir bien el procesador depende de lo que uno necesita realmente y del presupuesto que tenga.
+          </p>
+          <img src="https://i.imgur.com/OKlRluu.png" alt="Imagen 2 - Diferencia entre procesadores">
+          <img src="https://i.imgur.com/NJMFQAq.png" alt="Imagen 3 - Cuadro comparativo Intel i5 vs i3">
+        </article>
+      </section>
 
-      <hr>
+      <section>
+       <article label="Comparativa: Core i7-13700K vs Ryzen 7 7800X3D">
+         <h2>Comparativa de procesadores</h2>
 
-      <h3>En lenguaje común:</h3>
-      <p>El bitrate es cuánta “información” pasa por internet cuando mirás o hacés un video en vivo. Si es alto, el video se ve y se escucha mejor, pero necesita una buena conexión. Si es bajo, el video se ve más feo, pero anda más rápido, aunque tengas internet lento.</p>
-    </article>
+          <table border="1" cellspacing="0" cellpadding="6">
+            <thead>
+              <tr>
+                <td>  Característica  </td>
+                <td>  Intel Core i7-13700K  </td>
+                <td>  AMD Ryzen 7 7800X3D  </td>
+              </tr>
+            </thead>
+            <tr>
+              <td>Arquitectura</td>
+              <td>Raptor Lake (Intel 7, ~10 nm)</td>
+              <td>Zen 4 (5 nm)</td>
+            </tr>
+            <tr>
+              <td>Núcleos / Hilos</td>
+              <td>16 núcleos (8 P + 8 E) / 24 hilos</td>
+              <td>8 núcleos / 16 hilos</td>
+            </tr>
+            <tr>
+              <td>Frecuencia base</td>
+              <td>P-cores 3,40 GHz, E-cores 2,50 GHz</td>
+              <td>4,20 GHz</td>
+            </tr>
+            <tr>
+              <td>Frecuencia máxima (Boost)</td>
+              <td>Hasta 5,40 GHz (P-cores)</td>
+              <td>Hasta 5,00 GHz</td>
+            </tr>
+            <tr>
+              <td>Gráficos integrados</td>
+              <td>Intel UHD Graphics 770</td>
+              <td>Radeon Graphics (integrados)</td>
+            </tr>
+            <tr>
+              <td>Caché total</td>
+              <td>30 MB Smart Cache (L3) + 24 MB L2</td>
+              <td>96 MB (L3 “3D V-Cache”) + 8 MB L2</td>
+            </tr>
+            <tr>
+              <td>Consumo (TDP)</td>
+              <td>125 W base, hasta ~253 W en turbo</td>
+              <td>120 W</td>
+            </tr>
+            <tr>
+              <td>Socket</td>
+              <td>LGA1700 / FCLGA1700</td>
+              <td>AM5</td>
+            </tr>
+            <tr>
+              <td>Memoria compatible</td>
+              <td>DDR4-3200 o DDR5-5600 (dual-channel)</td>
+              <td>DDR5 hasta 5200 MT/s</td>
+            </tr>
+            <tr>
+              <td>Precio aproximado (2025)</td>
+              <td>USD 350–420 (valor de lanzamiento $409)</td>
+              <td>USD 330–500 (valor de lanzamiento $449)</td>
+            </tr>
+          </table>
 
-    <article>
-      <h2>¿Qué es la latencia?</h2>
-      <h3>Explicación de la IA:</h3>
-      <p>La latencia es el tiempo que tarda un paquete de datos en viajar desde su origen hasta su destino dentro de una red. Se mide en milisegundos (ms). Una baja latencia implica una comunicación más rápida y fluida, mientras que una latencia alta provoca retrasos o demoras perceptibles, especialmente en juegos en línea o videollamadas.</p>
+            <h3>Fuente</h3>
+            <p>Información tomada de <a href="https://technical.city/es/cpu/Core-i7-13700K-vs-Ryzen-7-7800X3D#general-info">technical.city</a>.</p>
 
-      <hr>
+            <h2>Conclusión personal</h2>
+            <p>Si tuviera que elegir, me inclinaría por el Ryzen 7 7800X3D. Más que nada porque,
+              aunque no entiendo mucho de componentes, veo que tiene mejor eficiencia y un rendimiento muy 
+              bueno en juegos gracias a esa caché grande que trae. 
+              Además, consume menos energía y calienta menos que el i7, lo cual me parece importante si no quiero tener
+              problemas de temperatura o con la fuente. 
+              El i7 también es muy bueno, pero por lo que estuve viendo, el Ryzen parece rendir más parejo sin gastar tanto. 
+              Así que, teniendo en cuenta la potencia, consumo y precio, me quedo con el Ryzen.
+            </p>
 
-      <h3>En lenguaje común:</h3>
-      <p>La latencia es el tiempo que tarda algo en responder. Por ejemplo, cuando jugás online y apretás un botón, si hay mucha latencia, el personaje se mueve tarde. Cuanta menos latencia, más rápido responde todo.</p>
-    </article>
+        </article>
+      </section>
 
-    <article>
-      <h2>¿Qué función cumple la GPU en una PC gamer?</h2>
-      <h3>Explicación de la IA:</h3>
-      <p>La GPU (Unidad de Procesamiento Gráfico) es un componente especializado en realizar cálculos relacionados con el procesamiento de imágenes, videos y gráficos en 3D. En una PC gamer, la GPU se encarga de renderizar los gráficos de los juegos, aliviando la carga del CPU y mejorando la calidad visual y el rendimiento general.</p>
+      <section>
+        <article label="Resumen técnico explicado con IA">
+            <h2>¿Qué es el bitrate en streaming?</h2>
+            <h3>Explicación de la IA:</h3>
+            <p>El bitrate es la cantidad de datos que se transfieren por segundo en una transmisión de video o audio digital.
+              Se mide en kilobits por segundo (kbps) o megabits por segundo (Mbps). 
+              Un mayor bitrate generalmente significa mejor calidad de imagen o sonido,
+              pero también requiere más ancho de banda para poder transmitirse sin interrupciones.
+            </p>
 
-      <hr>
+            <hr>
 
-      <h3>En lenguaje común:</h3>
-      <p>La GPU es la parte de la computadora que hace que los juegos se vean bien. Se encarga de los gráficos, las imágenes y todo lo que ves en la pantalla. Si tenés una buena GPU, los juegos se ven lindos y andan rápido; si no tenés una buena, se verían trabados o con mala calidad.</p>
-    </article>
+            <h3>En lenguaje común:</h3>
+            <p>El bitrate es cuánta “información” pasa por internet cuando mirás o hacés un video en vivo. Si es alto, el video se ve y se escucha mejor, pero necesita una buena conexión. Si es bajo, el video se ve más feo, pero anda más rápido, aunque tengas internet lento.</p>
+          </article>
 
-    <article>
-      <h2>Imagen generada por IA</h2>
-      <p><strong>Prompt:</strong> “Hombre streameando Minecraft, debe estar mirando a la pantalla con un pc de escritorio, además, debe tener micrófono de mesa”.</p>
+          <article>
+            <h2>¿Qué es la latencia?</h2>
+            <h3>Explicación de la IA:</h3>
+            <p>La latencia es el tiempo que tarda un paquete de datos en viajar desde su origen 
+              hasta su destino dentro de una red. Se mide en milisegundos (ms).
+              Una baja latencia implica una comunicación más rápida y fluida,
+              mientras que una latencia alta provoca retrasos o demoras perceptibles, especialmente 
+              en juegos en línea o videollamadas.
+            </p>
 
-      <div>
-        <img src="https://i.imgur.com/w42fChU.png" alt="Imagen IA - Hombre streameando Minecraft" width="350">
-      </div>
-    </article>
-  </section>
+            <hr>
 
-  <footer>
-    <p>&nbsp;</p>
-  </footer>
-</body>
+            <h3>En lenguaje común:</h3>
+            <p>La latencia es el tiempo que tarda algo en responder. Por ejemplo, cuando jugás online y 
+              apretás un botón, si hay mucha latencia, el personaje se mueve tarde. Cuanta menos latencia,
+              más rápido responde todo.
+            </p>
+          </article>
+
+          <article>
+            <h2>¿Qué función cumple la GPU en una PC gamer?</h2>
+            <h3>Explicación de la IA:</h3>
+            <p>La GPU (Unidad de Procesamiento Gráfico) es un componente especializado en realizar cálculos relacionados
+              con el procesamiento de imágenes, videos y gráficos en 3D. En una PC gamer, la GPU se encarga de renderizar los gráficos de
+              los juegos, aliviando la carga del CPU y mejorando la calidad visual y el rendimiento general.
+            </p>
+
+            <hr>
+
+            <h3>En lenguaje común:</h3>
+            <p>La GPU es la parte de la computadora que hace que los juegos se vean bien. Se encarga de los gráficos,
+              las imágenes y todo lo que ves en la pantalla. Si tenés una buena GPU, los juegos se ven lindos y andan rápido;
+              si no tenés una buena, se verían trabados o con mala calidad.
+            </p>
+          </article>
+
+          <article>
+            <h2>Imagen generada por IA</h2>
+            <p>Prompt: “Hombre streameando Minecraft, debe estar mirando a la pantalla con un pc de escritorio,
+              además, debe tener micrófono de mesa”.
+            </p>
+
+            <img src="https://i.imgur.com/w42fChU.png" alt="Imagen IA - Hombre streameando Minecraft" width="350">
+        </article>
+      </section>
+      <section>
+        <article>
+
+            <h2>Conclusiones Finales:</h2>
+
+            <h3>1. ¿Cómo te ayudó la IA en este trabajo?</h3>
+            <p>La IA me ayudó principalmente a organizar la información de manera clara, 
+              generar textos que me ayudaran a entender un tema en concreto y realizar 
+              comparaciones rápidas entre diferentes opciones de componentes, lo que agilizó
+              mucho el trabajo. También fue útil para sugerir formatos de tablas y
+              recomendaciones de hardware.
+            </p>
+
+            <h3>2. ¿Detectaste errores o información poco confiable? ¿Cómo lo resolviste?</h3>
+            <p>Sí, en algunos casos la IA proporcionó datos incompletos o imprecisos. Para 
+              resolverlo, verifiqué la información en páginas confiables y, en algunos casos,
+              modifiqué el prompt para que la respuesta fuera más exacta y detallada.
+            </p>
+
+            <h3>3. ¿En qué casos preferís buscar información manualmente en lugar de usar IA?</h3>
+            <p>Prefiero buscar información manualmente cuando necesito datos muy específicos,
+              actualizados o técnicos que necesiten precisión, como precios, disponibilidad de productos,
+              documentación oficial de software u otros tipos de detalles.
+            </p>
+        </article>
+    </footer>
+  </body>
 </html>
